@@ -7,6 +7,7 @@ Game::Game()
 Game::~Game()
 {
 	ClearScene();
+	ClearSounds();
 
 	//Destroy window	
 	SDL_DestroyRenderer(m_renderer);
@@ -16,6 +17,7 @@ Game::~Game()
 
 	//Quit SDL subsystems
 	IMG_Quit();
+	TTF_Quit();
 	SDL_Quit();
 }
 
@@ -31,7 +33,7 @@ bool Game::InitSystems()
 	bool success = true;
 
 	//Initialize SDL
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO)  < 0)
 	{
 		printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
 		success = false;
@@ -72,6 +74,20 @@ bool Game::InitSystems()
 					printf("SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError());
 					success = false;
 				}
+
+				//Initialize SDL_ttf
+				if (TTF_Init() == -1)
+				{
+					printf("SDL_ttf could not initialize! SDL_ttf Error: %s\n", TTF_GetError());
+					success = false;
+				}
+
+				//Initialize SDL_mixer
+				if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0)
+				{
+					printf("SDL_mixer could not initialize! SDL_mixer Error: %s\n", Mix_GetError());
+					success = false;
+				}
 			}
 		}
 	}
@@ -85,16 +101,13 @@ void Game::Run()
 {
 	Start();
 
-	//Main loop flag
-	bool quit = false;
-
 	//Event handler
 	SDL_Event e;
 
 
 
 	//While application is running
-	while (!quit)
+	while (m_isRunning)
 	{
 		//calculate deltaTime
 		double time = SDL_GetTicks();
@@ -110,7 +123,7 @@ void Game::Run()
 			//User requests quit
 			if (e.type == SDL_QUIT)
 			{
-				quit = true;
+				m_isRunning = false;
 			}
 
 			//If mouse event happened
@@ -149,10 +162,10 @@ void Game::Run()
 	}
 }
 
-GameObject * Game::AddObject(std::string name)
+void Game::AddObject(GameObject* object)
 {
-	m_activeScene.push_back(new GameObject(m_renderer, name));
-	return m_activeScene.at(m_activeScene.size() - 1);
+	object->Setup(m_renderer, this);
+	m_activeScene.push_back(object);
 }
 
 void Game::RemoveObject(std::string name)
@@ -180,6 +193,57 @@ void Game::ClearScene()
 	m_activeScene = std::vector<GameObject*>();
 }
 
+void Game::ClearSounds()
+{
+	Mix_ExpireChannel(-1, 0);
+	for (AudioClip* clip : m_audioClips)
+	{
+		if (clip != nullptr)
+		{
+			delete clip;
+		}
+	}
+}
+
+void Game::LoadSound(std::string name, std::string path)
+{
+	AudioClip* newClip = new AudioClip;
+	newClip->m_clip = Mix_LoadWAV(path.c_str());
+	newClip->m_name = name;
+	m_audioClips.push_back(newClip);
+}
+
+void Game::PlaySound(std::string name, bool loop)
+{
+	for (AudioClip* clip : m_audioClips)
+	{
+		if (clip->m_name == name)
+		{
+			if (loop)
+				clip->m_channel = Mix_PlayChannel(-1, clip->m_clip, -1);
+			else
+				clip->m_channel = Mix_PlayChannel(-1, clip->m_clip, 0);
+		}
+	}
+}
+
+void Game::StopSound(std::string name)
+{
+	for (AudioClip* clip : m_audioClips)
+	{
+		if (clip->m_name == name)
+		{
+			Mix_HaltChannel(clip->m_channel);
+		}
+	}
+
+}
+
+void Game::Quit()
+{
+	m_isRunning = false;
+}
+
 void Game::Start()
 {
 	for (GameObject* go : m_activeScene)
@@ -194,7 +258,22 @@ void Game::Update(double delta, Input in)
 	{
 		go->Update(delta, in);
 	}
-	
+
+	//calculate all collisions
+	for (int i = 0; i < m_activeScene.size() - 1; i++)
+	{
+		for (int j = i + 1; j < m_activeScene.size(); j++)
+		{
+			GameObject* go1 = m_activeScene.at(i);
+			GameObject* go2 = m_activeScene.at(j);
+
+			if (go1->m_position.x + go1->m_dimensions.x > go2->m_position.x && go1->m_position.y + go1->m_dimensions.y > go2->m_position.y && go1->m_position.x < go2->m_position.x + go2->m_dimensions.x &&  go1->m_position.y < go2->m_position.y + go2->m_dimensions.y)
+			{
+				go1->OnCollision(go2);
+				go2->OnCollision(go1);
+			}
+		}
+	}
 }
 
 void Game::Draw()

@@ -1,4 +1,5 @@
 #include "GameObject.h"
+#include "Game.h"
 
 GameObject::GameObject()
 {
@@ -11,33 +12,10 @@ GameObject::~GameObject()
 	m_texture = NULL;
 }
 
-GameObject::GameObject(SDL_Renderer * renderer, std::string name)
+void GameObject::Setup(SDL_Renderer * renderer, Game * game)
 {
 	m_renderer = renderer;
-	m_name = name;
-}
-
-void GameObject::Start()
-{
-}
-
-void GameObject::Update(float deltaTime, Input input)
-{
-	if (input.keyboardState[SDL_SCANCODE_RIGHT])
-	{
-		m_position.x += 200 * deltaTime;
-	}
-	if (input.keyboardState[SDL_SCANCODE_LEFT])
-	{
-		m_position.x -= 200 * deltaTime;
-	}
-
-	if (input.mouseState.lPressed)
-	{
-		if (CollisionPoint(input.mouseState.x, input.mouseState.y))
-			std::cout << "Clicked" << std::endl;
-	}
-	
+	m_game = game;
 }
 
 void GameObject::Draw()
@@ -49,11 +27,6 @@ void GameObject::Draw()
 	SDL_RenderCopyEx(m_renderer, m_texture, NULL, &renderQuad, m_rotation, NULL, SDL_FLIP_NONE);
 }
 
-void GameObject::LoadTexture(std::string path)
-{
-	m_texture = LoadTextureFromFile(path);
-}
-
 bool GameObject::CollisionPoint(int x, int y)
 {
 	//check if point is in sprite collider
@@ -61,6 +34,30 @@ bool GameObject::CollisionPoint(int x, int y)
 		return true;
 	else
 		return false;
+}
+
+void GameObject::LoadTexture(std::string path)
+{
+	m_texture = LoadTextureFromFile(path);
+}
+
+void GameObject::LoadFont(std::string path)
+{
+	//Open the font
+	m_font = TTF_OpenFont(path.c_str(), 28);
+	if (m_font == NULL)
+	{
+		printf("Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError());
+	}
+}
+
+void GameObject::DrawTextColor(std::string text, SDL_Color color)
+{
+	//Render text
+	if (!(m_texture=LoadFontInTexture(text, color)))
+	{
+		printf("Failed to render text texture!\n");
+	}
 }
 
 SDL_Texture * GameObject::LoadTextureFromFile(std::string path)
@@ -91,5 +88,41 @@ SDL_Texture * GameObject::LoadTextureFromFile(std::string path)
 		SDL_FreeSurface(loadedSurface);
 	}
 
+	return newTexture;
+}
+
+
+//from : http://lazyfoo.net/tutorials/SDL/16_true_type_fonts/index.php
+SDL_Texture * GameObject::LoadFontInTexture(std::string text, SDL_Color color)
+{
+	//The final texture
+	SDL_Texture* newTexture = NULL;
+
+	//Render text surface
+	SDL_Surface* textSurface = TTF_RenderText_Solid(m_font, text.c_str(), color);
+	if (textSurface == NULL)
+	{
+		printf("Unable to render text surface! SDL_ttf Error: %s\n", TTF_GetError());
+	}
+	else
+	{
+		//Create texture from surface pixels
+		newTexture = SDL_CreateTextureFromSurface(m_renderer, textSurface);
+		if (newTexture == NULL)
+		{
+			printf("Unable to create texture from rendered text! SDL Error: %s\n", SDL_GetError());
+		}
+		else
+		{
+			//Get image dimensions
+			m_dimensions.x = textSurface->w;
+			m_dimensions.y = textSurface->h;
+		}
+
+		//Get rid of old surface
+		SDL_FreeSurface(textSurface);
+	}
+
+	//Return success
 	return newTexture;
 }
