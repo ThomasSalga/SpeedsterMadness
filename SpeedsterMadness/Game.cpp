@@ -105,7 +105,6 @@ void Game::Run()
 	SDL_Event e;
 
 
-
 	//While application is running
 	while (m_isRunning)
 	{
@@ -116,6 +115,12 @@ void Game::Run()
 
 		//
 		Input input;
+
+		//Get mouse position
+		int x, y;
+		SDL_GetMouseState(&x, &y);
+		input.mouseState.x = x;
+		input.mouseState.y = y;
 
 		//Handle events on queue
 		while (SDL_PollEvent(&e) != 0)
@@ -129,12 +134,6 @@ void Game::Run()
 			//If mouse event happened
 			if (e.type == SDL_MOUSEMOTION || e.type == SDL_MOUSEBUTTONDOWN || e.type == SDL_MOUSEBUTTONUP)
 			{
-				//Get mouse position
-				int x, y;
-				SDL_GetMouseState(&x, &y);
-				input.mouseState.x = x;
-				input.mouseState.y = y;
-
 				switch (e.type)
 				{
 				case SDL_MOUSEBUTTONDOWN:
@@ -162,19 +161,21 @@ void Game::Run()
 	}
 }
 
-void Game::AddObject(GameObject* object)
+void Game::AddObject(GameObject* object, int sceneIndex)
 {
 	object->Setup(m_renderer, this);
-	m_activeScene.push_back(object);
+	m_scenes.at(sceneIndex)->push_back(object);
+	m_activeScene = *m_scenes.at(sceneIndex);
 }
 
-void Game::RemoveObject(std::string name)
+void Game::RemoveObject(std::string name, int sceneIndex)
 {
-	for (int a = 0; a < m_activeScene.size(); a++)
+	for (int a = 0; a < m_scenes.at(sceneIndex)->size(); a++)
 	{
-		if (m_activeScene.at(a)->m_name == name)
+		if (m_scenes.at(sceneIndex)->at(a)->m_name == name)
 		{
-			m_activeScene.erase(m_activeScene.begin() + a);
+			m_scenes.at(sceneIndex)->erase(m_scenes.at(sceneIndex)->begin() + a);
+			m_activeScene = *m_scenes.at(sceneIndex);
 			return;
 		}
 	}
@@ -191,6 +192,17 @@ void Game::ClearScene()
 		}
 	}
 	m_activeScene = std::vector<GameObject*>();
+}
+
+void Game::AddSceneToGame()
+{
+	m_scenes.push_back(new std::vector<GameObject*>());
+}
+
+void Game::SetActiveScene(int sceneIndex)
+{
+	m_activeScene = *m_scenes.at(sceneIndex); //dereference operator "*pointer"
+	Start();
 }
 
 void Game::ClearSounds()
@@ -254,7 +266,10 @@ void Game::Start()
 
 void Game::Update(double delta, Input in)
 {
-	for (GameObject* go : m_activeScene)
+	//set marker for scene to prevent interaction when changing scene
+	std::vector<GameObject*> workingScene = m_activeScene;
+	//update objects
+	for (GameObject* go : workingScene)
 	{
 		go->Update(delta, in);
 	}
@@ -267,6 +282,7 @@ void Game::Update(double delta, Input in)
 			GameObject* go1 = m_activeScene.at(i);
 			GameObject* go2 = m_activeScene.at(j);
 
+			// applies only to rectangular objects that don't rotate
 			if (go1->m_position.x + go1->m_dimensions.x > go2->m_position.x && go1->m_position.y + go1->m_dimensions.y > go2->m_position.y && go1->m_position.x < go2->m_position.x + go2->m_dimensions.x &&  go1->m_position.y < go2->m_position.y + go2->m_dimensions.y)
 			{
 				go1->OnCollision(go2);
@@ -286,6 +302,21 @@ void Game::Draw()
 	{
 		go->Draw();
 	}
+
+	/*
+	// From Bobby Law's Lab9
+	SDL_Rect tilePosXY;
+	tilePosXY = { 50, 50, 100, 100 };
+	// determine number of rows and columns for array
+	int numRows = 6;
+	int numCols = 4;
+	SDL_SetRenderDrawColor(m_renderer, 150, 150, 150, 255);
+	for (int col = 0; col < numCols; col++)
+	{
+		tilePosXY.x += 50;
+	}
+	SDL_SetRenderDrawColor(m_renderer, 0, 0, 0, 255);
+	*/
 
 	//Render our fonts
 	DrawText();

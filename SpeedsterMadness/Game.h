@@ -2,6 +2,7 @@
 #define _GAME_H
 
 #include "GameObject.h"
+//#include "Timer.h"
 
 struct AudioClip
 {
@@ -14,8 +15,8 @@ class Game
 {
 public :
 	Game();
-	~Game();
 	Game(int width, int height);
+	~Game();
 
 	bool InitSystems(); //init window and SDL
 	void Run();
@@ -23,9 +24,11 @@ public :
 	glm::vec2 GetWindowSize() { return glm::vec2(m_windowWidth, m_windowHeight); }
 	
 	//scene managment
-	void AddObject(GameObject* object);
-	void RemoveObject(std::string name);
+	void AddObject(GameObject* object, int sceneIndex);
+	void RemoveObject(std::string name, int sceneIndex);
 	void ClearScene();
+	void AddSceneToGame();
+	void SetActiveScene(int sceneIndex);
 
 	//audio managment
 	void ClearSounds();
@@ -37,6 +40,7 @@ public :
 
 private:
 	std::vector<GameObject*> m_activeScene;
+	std::vector<std::vector<GameObject*>*> m_scenes;
 	std::vector<AudioClip*> m_audioClips;
 	int m_windowHeight;
 	int m_windowWidth;

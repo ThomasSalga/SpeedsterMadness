@@ -19,7 +19,7 @@ public:
 	void Draw();
 
 	void LoadTexture(std::string path);
-	void LoadFont(std::string path);
+	void LoadFont(std::string path, int size);
 	void DrawTextColor(std::string text, SDL_Color color);
 
 	bool CollisionPoint(int x, int y);
@@ -29,6 +29,7 @@ public:
 	glm::vec2 m_position{ 0,0 };
 	glm::vec2 m_dimensions{ 0,0 };
 	double m_rotation = 0;
+	Uint8 m_alpha = 255;
 
 
 protected:

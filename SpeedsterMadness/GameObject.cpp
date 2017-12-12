@@ -23,6 +23,9 @@ void GameObject::Draw()
 	//Set rendering space and render to screen
 	SDL_Rect renderQuad = { m_position.x, m_position.y, m_dimensions.x, m_dimensions.y };
 
+	//set alpha
+	SDL_SetTextureAlphaMod(m_texture, m_alpha);
+
 	//Render to screen
 	SDL_RenderCopyEx(m_renderer, m_texture, NULL, &renderQuad, m_rotation, NULL, SDL_FLIP_NONE);
 }
@@ -41,10 +44,10 @@ void GameObject::LoadTexture(std::string path)
 	m_texture = LoadTextureFromFile(path);
 }
 
-void GameObject::LoadFont(std::string path)
+void GameObject::LoadFont(std::string path, int size)
 {
 	//Open the font
-	m_font = TTF_OpenFont(path.c_str(), 28);
+	m_font = TTF_OpenFont(path.c_str(), size);
 	if (m_font == NULL)
 	{
 		printf("Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError());
