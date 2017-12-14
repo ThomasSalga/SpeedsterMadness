@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_back_ground_8h" kind="file">
+    <compoundname>BackGround.h</compoundname>
+    <includes refid="_game_object_8h" local="yes">GameObject.h</includes>
+    <includedby refid="_back_ground_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp</includedby>
+    <includedby refid="_source_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</includedby>
+    <incdepgraph>
+      <node id="189">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h</label>
+        <link refid="BackGround.h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="191">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>string</label>
+      </node>
+      <node id="196">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="190">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="199">
+        <label>vector</label>
+      </node>
+      <node id="200">
+        <label>iostream</label>
+      </node>
+      <node id="195">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="197">
+        <label>stdio.h</label>
+      </node>
+      <node id="193">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="201">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h</label>
+        <link refid="BackGround.h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp</label>
+        <link refid="_back_ground_8cpp"/>
+      </node>
+      <node id="203">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_back_ground" prot="public">BackGround</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_BG_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BG_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_object_8h" kindref="compound">GameObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_back_ground" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_back_ground" kindref="compound">BackGround</ref><sp/>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_game_object" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_back_ground_1a6a3fe7aa2ec8d57d372d336cd2d64337" kindref="member">BackGround</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_back_ground_1a3732a4f5ab11ab9d10d42d4649878665" kindref="member">~BackGround</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_back_ground_1a5d15f81e147f0eb2d02b793fd2621ada" kindref="member">Start</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_back_ground_1a18ec4a0921f1bf192ae9030436089bcb" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_back_ground_1afe00061ea7250bb06534ed4dcb503338" kindref="member">OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref>*<sp/>collider)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h"/>
+  </compounddef>
+</doxygen>

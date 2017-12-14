@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_audio_clip" kind="struct" prot="public">
+    <compoundname>AudioClip</compoundname>
+    <includes refid="_game_8h" local="no">Game.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_audio_clip_1a089093dcab6a372eb7ae66548862a8a8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AudioClip::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="10" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" compoundref="_game_8cpp" startline="223" endline="229">Game::LoadSound</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_clip_1a3279dc6f7a601b3aa9ece33406127558" prot="public" static="no" mutable="no">
+        <type>Mix_Chunk *</type>
+        <definition>Mix_Chunk* AudioClip::m_clip</definition>
+        <argsstring></argsstring>
+        <name>m_clip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="11" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" compoundref="_game_8cpp" startline="223" endline="229">Game::LoadSound</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_audio_clip_1a8fbd5e738bae36624b344382789c1ddb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AudioClip::m_channel</definition>
+        <argsstring></argsstring>
+        <name>m_channel</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="12" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="9" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="8" bodyend="13"/>
+    <listofallmembers>
+      <member refid="struct_audio_clip_1a8fbd5e738bae36624b344382789c1ddb" prot="public" virt="non-virtual"><scope>AudioClip</scope><name>m_channel</name></member>
+      <member refid="struct_audio_clip_1a3279dc6f7a601b3aa9ece33406127558" prot="public" virt="non-virtual"><scope>AudioClip</scope><name>m_clip</name></member>
+      <member refid="struct_audio_clip_1a089093dcab6a372eb7ae66548862a8a8" prot="public" virt="non-virtual"><scope>AudioClip</scope><name>m_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

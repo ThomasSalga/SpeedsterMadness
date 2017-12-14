@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_game" kind="class" prot="public">
+    <compoundname>Game</compoundname>
+    <includes refid="_game_8h" local="no">Game.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_1a5a76bc267138492ad42f269f0f92669b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_game_object" kindref="compound">GameObject</ref> * &gt;</type>
+        <definition>std::vector&lt;GameObject*&gt; Game::m_activeScene</definition>
+        <argsstring></argsstring>
+        <name>m_activeScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="44" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" compoundref="_game_8cpp" startline="161" endline="166">AddObject</referencedby>
+        <referencedby refid="class_game_1af2765ff96ef807dddb2a06bbe9057b18" compoundref="_game_8cpp" startline="182" endline="192">ClearScene</referencedby>
+        <referencedby refid="class_game_1aad2c20e2c5529244095c50c238911e30" compoundref="_game_8cpp" startline="297" endline="313">Draw</referencedby>
+        <referencedby refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" compoundref="_game_8cpp" startline="168" endline="180">RemoveObject</referencedby>
+        <referencedby refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">SetActiveScene</referencedby>
+        <referencedby refid="class_game_1adb05b20574551a26f8cf1dc664782790" compoundref="_game_8cpp" startline="261" endline="267">Start</referencedby>
+        <referencedby refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" compoundref="_game_8cpp" startline="269" endline="295">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1a112021c937e24b38503f5325fcb63af2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="class_game_object" kindref="compound">GameObject</ref> * &gt; * &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;GameObject*&gt;*&gt; Game::m_scenes</definition>
+        <argsstring></argsstring>
+        <name>m_scenes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="45" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" compoundref="_game_8cpp" startline="161" endline="166">AddObject</referencedby>
+        <referencedby refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" compoundref="_game_8cpp" startline="194" endline="197">AddSceneToGame</referencedby>
+        <referencedby refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" compoundref="_game_8cpp" startline="168" endline="180">RemoveObject</referencedby>
+        <referencedby refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">SetActiveScene</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1adf6a05d2cb1f75197792d116447dc351" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_audio_clip" kindref="compound">AudioClip</ref> * &gt;</type>
+        <definition>std::vector&lt;AudioClip*&gt; Game::m_audioClips</definition>
+        <argsstring></argsstring>
+        <name>m_audioClips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="46" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_game_1a20968d3e7684406c218c78f1636bcc9b" compoundref="_game_8cpp" startline="211" endline="221">ClearSounds</referencedby>
+        <referencedby refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" compoundref="_game_8cpp" startline="223" endline="229">LoadSound</referencedby>
+        <referencedby refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" compoundref="_game_8cpp" startline="231" endline="243">PlaySound</referencedby>
+        <referencedby refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" compoundref="_game_8cpp" startline="245" endline="254">StopSound</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::m_windowHeight</definition>
+        <argsstring></argsstring>
+        <name>m_windowHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="47" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_game_1a5bc07cf8947858f32637943836cc6f8e" compoundref="_game_8cpp" startline="24" endline="28">Game</referencedby>
+        <referencedby refid="class_game_1a5d10a78924d45454645a0b15bfde7624" compoundref="_game_8h" startline="25" endline="25">GetWindowSize</referencedby>
+        <referencedby refid="class_game_1a8ded578027b24871870babe65a939567" compoundref="_game_8cpp" startline="30" endline="98">InitSystems</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1ac379ce6b1ac74de3fbec35283e724172" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::m_windowWidth</definition>
+        <argsstring></argsstring>
+        <name>m_windowWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="48" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_game_1a5bc07cf8947858f32637943836cc6f8e" compoundref="_game_8cpp" startline="24" endline="28">Game</referencedby>
+        <referencedby refid="class_game_1a5d10a78924d45454645a0b15bfde7624" compoundref="_game_8h" startline="25" endline="25">GetWindowSize</referencedby>
+        <referencedby refid="class_game_1a8ded578027b24871870babe65a939567" compoundref="_game_8cpp" startline="30" endline="98">InitSystems</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Game::m_isRunning</definition>
+        <argsstring></argsstring>
+        <name>m_isRunning</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="49" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_game_1a1827c75a4b4ab4a543bf99772a55337c" compoundref="_game_8cpp" startline="256" endline="259">Quit</referencedby>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1a56e10102cb5ba809d8b31de68af56a7e" prot="private" static="no" mutable="no">
+        <type>Uint8</type>
+        <definition>Uint8 Game::m_activeSceneIndex</definition>
+        <argsstring></argsstring>
+        <name>m_activeSceneIndex</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="50" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_game_1aee36fbc84dea2886feb4cab048c86314" compoundref="_game_8cpp" startline="206" endline="209">GetActiveScene</referencedby>
+        <referencedby refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">SetActiveScene</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1a6e0d70674956416e0294b6b749779e92" prot="private" static="no" mutable="no">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window* Game::m_window</definition>
+        <argsstring></argsstring>
+        <name>m_window</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="53" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_game_1a8ded578027b24871870babe65a939567" compoundref="_game_8cpp" startline="30" endline="98">InitSystems</referencedby>
+        <referencedby refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" compoundref="_game_8cpp" startline="7" endline="22">~Game</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1a52ea7db927b65ea842227705fc1fc0c2" prot="private" static="no" mutable="no">
+        <type>SDL_Renderer *</type>
+        <definition>SDL_Renderer* Game::m_renderer</definition>
+        <argsstring></argsstring>
+        <name>m_renderer</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="56" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" compoundref="_game_8cpp" startline="161" endline="166">AddObject</referencedby>
+        <referencedby refid="class_game_1aad2c20e2c5529244095c50c238911e30" compoundref="_game_8cpp" startline="297" endline="313">Draw</referencedby>
+        <referencedby refid="class_game_1a8ded578027b24871870babe65a939567" compoundref="_game_8cpp" startline="30" endline="98">InitSystems</referencedby>
+        <referencedby refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" compoundref="_game_8cpp" startline="7" endline="22">~Game</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Game::m_deltaTime</definition>
+        <argsstring></argsstring>
+        <name>m_deltaTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="63" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_game_1a8ded578027b24871870babe65a939567" compoundref="_game_8cpp" startline="30" endline="98">InitSystems</referencedby>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Run</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_1ad59df6562a58a614fda24622d3715b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Game::Game</definition>
+        <argsstring>()</argsstring>
+        <name>Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="18" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a5bc07cf8947858f32637943836cc6f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Game::Game</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>Game</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="19" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="24" bodyend="28"/>
+        <references refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" compoundref="_game_8h" startline="47">m_windowHeight</references>
+        <references refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" compoundref="_game_8h" startline="48">m_windowWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1ae3d112ca6e0e55150d2fdbc704474530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Game::~Game</definition>
+        <argsstring>()</argsstring>
+        <name>~Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="20" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="7" bodyend="22"/>
+        <references refid="class_game_1af2765ff96ef807dddb2a06bbe9057b18" compoundref="_game_8cpp" startline="182" endline="192">ClearScene</references>
+        <references refid="class_game_1a20968d3e7684406c218c78f1636bcc9b" compoundref="_game_8cpp" startline="211" endline="221">ClearSounds</references>
+        <references refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" compoundref="_game_8h" startline="56">m_renderer</references>
+        <references refid="class_game_1a6e0d70674956416e0294b6b749779e92" compoundref="_game_8h" startline="53">m_window</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a8ded578027b24871870babe65a939567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Game::InitSystems</definition>
+        <argsstring>()</argsstring>
+        <name>InitSystems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="22" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="30" bodyend="98"/>
+        <references refid="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" compoundref="_game_8h" startline="63">m_deltaTime</references>
+        <references refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" compoundref="_game_8h" startline="56">m_renderer</references>
+        <references refid="class_game_1a6e0d70674956416e0294b6b749779e92" compoundref="_game_8h" startline="53">m_window</references>
+        <references refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" compoundref="_game_8h" startline="47">m_windowHeight</references>
+        <references refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" compoundref="_game_8h" startline="48">m_windowWidth</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="23" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="100" bodyend="159"/>
+        <references refid="class_game_1aad2c20e2c5529244095c50c238911e30" compoundref="_game_8cpp" startline="297" endline="313">Draw</references>
+        <references refid="class_input_1a359e935807893d306a9ab8714d9aac26" compoundref="_input_8h" startline="27">Input::keyboardState</references>
+        <references refid="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" compoundref="_input_8h" startline="17">MouseStateDescriptor::lPressed</references>
+        <references refid="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" compoundref="_game_8h" startline="63">m_deltaTime</references>
+        <references refid="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" compoundref="_game_8h" startline="49">m_isRunning</references>
+        <references refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" compoundref="_input_8h" startline="28">Input::mouseState</references>
+        <references refid="struct_mouse_state_descriptor_1a7d31f55333e1576b76a5d612aa3518e0" compoundref="_input_8h" startline="18">MouseStateDescriptor::rPressed</references>
+        <references refid="class_game_1adb05b20574551a26f8cf1dc664782790" compoundref="_game_8cpp" startline="261" endline="267">Start</references>
+        <references refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" compoundref="_game_8cpp" startline="269" endline="295">Update</references>
+        <references refid="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" compoundref="_input_8h" startline="16">MouseStateDescriptor::x</references>
+        <references refid="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" compoundref="_input_8h" startline="16">MouseStateDescriptor::y</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a5d10a78924d45454645a0b15bfde7624" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 Game::GetWindowSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetWindowSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="25" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="25" bodyend="25"/>
+        <references refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" compoundref="_game_8h" startline="47">m_windowHeight</references>
+        <references refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" compoundref="_game_8h" startline="48">m_windowWidth</references>
+        <referencedby refid="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" compoundref="_s_m___controller_8h" startline="18" endline="18">SM_Controller::GetMovementArea</referencedby>
+        <referencedby refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" compoundref="_obstacle_car_8h" startline="19" endline="19">ObstacleCar::GetMovementArea</referencedby>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+        <referencedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" compoundref="_s_m___controller_8cpp" startline="14" endline="21">SM_Controller::Start</referencedby>
+        <referencedby refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" compoundref="_obstacle_car_8cpp" startline="15" endline="28">ObstacleCar::Start</referencedby>
+        <referencedby refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" compoundref="_obstacle_car_8cpp" startline="30" endline="39">ObstacleCar::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a722d3b03daad1401b8be2af4b2b4611a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::AddObject</definition>
+        <argsstring>(GameObject *object, int sceneIndex)</argsstring>
+        <name>AddObject</name>
+        <param>
+          <type><ref refid="class_game_object" kindref="compound">GameObject</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sceneIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="28" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="161" bodyend="166"/>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <references refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" compoundref="_game_8h" startline="56">m_renderer</references>
+        <references refid="class_game_1a112021c937e24b38503f5325fcb63af2" compoundref="_game_8h" startline="45">m_scenes</references>
+        <referencedby refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" compoundref="_obstacle_mng_8cpp" startline="42" endline="56">ObstacleMng::AddObstacle</referencedby>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::RemoveObject</definition>
+        <argsstring>(std::string name, int sceneIndex)</argsstring>
+        <name>RemoveObject</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sceneIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="29" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="168" bodyend="180"/>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <references refid="class_game_1a112021c937e24b38503f5325fcb63af2" compoundref="_game_8h" startline="45">m_scenes</references>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">SM_Controller::OnCollision</referencedby>
+        <referencedby refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" compoundref="_obstacle_car_8cpp" startline="30" endline="39">ObstacleCar::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1af2765ff96ef807dddb2a06bbe9057b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::ClearScene</definition>
+        <argsstring>()</argsstring>
+        <name>ClearScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="30" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="182" bodyend="192"/>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <referencedby refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" compoundref="_game_8cpp" startline="7" endline="22">~Game</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::AddSceneToGame</definition>
+        <argsstring>()</argsstring>
+        <name>AddSceneToGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="31" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="194" bodyend="197"/>
+        <references refid="class_game_1a112021c937e24b38503f5325fcb63af2" compoundref="_game_8h" startline="45">m_scenes</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::SetActiveScene</definition>
+        <argsstring>(int sceneIndex)</argsstring>
+        <name>SetActiveScene</name>
+        <param>
+          <type>int</type>
+          <declname>sceneIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="32" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="199" bodyend="204"/>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <references refid="class_game_1a56e10102cb5ba809d8b31de68af56a7e" compoundref="_game_8h" startline="50">m_activeSceneIndex</references>
+        <references refid="class_game_1a112021c937e24b38503f5325fcb63af2" compoundref="_game_8h" startline="45">m_scenes</references>
+        <references refid="class_game_1adb05b20574551a26f8cf1dc664782790" compoundref="_game_8cpp" startline="261" endline="267">Start</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">SM_Controller::OnCollision</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1aee36fbc84dea2886feb4cab048c86314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Uint8</type>
+        <definition>Uint8 Game::GetActiveScene</definition>
+        <argsstring>()</argsstring>
+        <name>GetActiveScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="33" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="206" bodyend="209"/>
+        <references refid="class_game_1a56e10102cb5ba809d8b31de68af56a7e" compoundref="_game_8h" startline="50">m_activeSceneIndex</references>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a20968d3e7684406c218c78f1636bcc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::ClearSounds</definition>
+        <argsstring>()</argsstring>
+        <name>ClearSounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="36" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="211" bodyend="221"/>
+        <references refid="class_game_1adf6a05d2cb1f75197792d116447dc351" compoundref="_game_8h" startline="46">m_audioClips</references>
+        <referencedby refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" compoundref="_game_8cpp" startline="7" endline="22">~Game</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::LoadSound</definition>
+        <argsstring>(std::string name, std::string path)</argsstring>
+        <name>LoadSound</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="37" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="223" bodyend="229"/>
+        <references refid="class_game_1adf6a05d2cb1f75197792d116447dc351" compoundref="_game_8h" startline="46">m_audioClips</references>
+        <references refid="struct_audio_clip_1a3279dc6f7a601b3aa9ece33406127558" compoundref="_game_8h" startline="11">AudioClip::m_clip</references>
+        <references refid="struct_audio_clip_1a089093dcab6a372eb7ae66548862a8a8" compoundref="_game_8h" startline="10">AudioClip::m_name</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::PlaySound</definition>
+        <argsstring>(std::string name, bool loop)</argsstring>
+        <name>PlaySound</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>loop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="38" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="231" bodyend="243"/>
+        <references refid="class_game_1adf6a05d2cb1f75197792d116447dc351" compoundref="_game_8h" startline="46">m_audioClips</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">SM_Controller::OnCollision</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1aa948dd58619ddeadcf803315c6f2a236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::StopSound</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>StopSound</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="39" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="245" bodyend="254"/>
+        <references refid="class_game_1adf6a05d2cb1f75197792d116447dc351" compoundref="_game_8h" startline="46">m_audioClips</references>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">SM_Controller::OnCollision</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a1827c75a4b4ab4a543bf99772a55337c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::Quit</definition>
+        <argsstring>()</argsstring>
+        <name>Quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="41" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="256" bodyend="259"/>
+        <references refid="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" compoundref="_game_8h" startline="49">m_isRunning</references>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_game_1adb05b20574551a26f8cf1dc664782790" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="58" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="261" bodyend="267"/>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Run</referencedby>
+        <referencedby refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">SetActiveScene</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a8f9bb984d06df0b54a45e80c476af023" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::Update</definition>
+        <argsstring>(double delta, Input in)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input" kindref="compound">Input</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="59" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="269" bodyend="295"/>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">GameObject::m_dimensions</references>
+        <references refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" compoundref="_game_object_8h" startline="29">GameObject::m_position</references>
+        <references refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7">GameObject::OnCollision</references>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1aad2c20e2c5529244095c50c238911e30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::Draw</definition>
+        <argsstring>()</argsstring>
+        <name>Draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="60" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="297" bodyend="313"/>
+        <references refid="class_game_1aa479cf13c7537f901423498c7dcce328" compoundref="_game_8cpp" startline="315" endline="317">DrawText</references>
+        <references refid="class_game_1a5a76bc267138492ad42f269f0f92669b" compoundref="_game_8h" startline="44">m_activeScene</references>
+        <references refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" compoundref="_game_8h" startline="56">m_renderer</references>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1aa479cf13c7537f901423498c7dcce328" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Game::DrawText</definition>
+        <argsstring>()</argsstring>
+        <name>DrawText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="61" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp" bodystart="315" bodyend="317"/>
+        <referencedby refid="class_game_1aad2c20e2c5529244095c50c238911e30" compoundref="_game_8cpp" startline="297" endline="313">Draw</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="28">
+        <label>std::vector&lt; std::vector&lt; GameObject * &gt; * &gt;</label>
+        <childnode refid="29" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>std::vector&lt; GameObject * &gt;</label>
+        <childnode refid="30" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="27">
+        <label>Game</label>
+        <link refid="class_game"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>m_scenes</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>m_audioClips</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>m_activeScene</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>m_game</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>std::vector&lt; AudioClip * &gt;</label>
+        <childnode refid="34" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>std::string</label>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" line="16" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h" bodystart="15" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" prot="public" virt="non-virtual"><scope>Game</scope><name>AddObject</name></member>
+      <member refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" prot="public" virt="non-virtual"><scope>Game</scope><name>AddSceneToGame</name></member>
+      <member refid="class_game_1af2765ff96ef807dddb2a06bbe9057b18" prot="public" virt="non-virtual"><scope>Game</scope><name>ClearScene</name></member>
+      <member refid="class_game_1a20968d3e7684406c218c78f1636bcc9b" prot="public" virt="non-virtual"><scope>Game</scope><name>ClearSounds</name></member>
+      <member refid="class_game_1aad2c20e2c5529244095c50c238911e30" prot="private" virt="non-virtual"><scope>Game</scope><name>Draw</name></member>
+      <member refid="class_game_1aa479cf13c7537f901423498c7dcce328" prot="private" virt="non-virtual"><scope>Game</scope><name>DrawText</name></member>
+      <member refid="class_game_1ad59df6562a58a614fda24622d3715b65" prot="public" virt="non-virtual"><scope>Game</scope><name>Game</name></member>
+      <member refid="class_game_1a5bc07cf8947858f32637943836cc6f8e" prot="public" virt="non-virtual"><scope>Game</scope><name>Game</name></member>
+      <member refid="class_game_1aee36fbc84dea2886feb4cab048c86314" prot="public" virt="non-virtual"><scope>Game</scope><name>GetActiveScene</name></member>
+      <member refid="class_game_1a5d10a78924d45454645a0b15bfde7624" prot="public" virt="non-virtual"><scope>Game</scope><name>GetWindowSize</name></member>
+      <member refid="class_game_1a8ded578027b24871870babe65a939567" prot="public" virt="non-virtual"><scope>Game</scope><name>InitSystems</name></member>
+      <member refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" prot="public" virt="non-virtual"><scope>Game</scope><name>LoadSound</name></member>
+      <member refid="class_game_1a5a76bc267138492ad42f269f0f92669b" prot="private" virt="non-virtual"><scope>Game</scope><name>m_activeScene</name></member>
+      <member refid="class_game_1a56e10102cb5ba809d8b31de68af56a7e" prot="private" virt="non-virtual"><scope>Game</scope><name>m_activeSceneIndex</name></member>
+      <member refid="class_game_1adf6a05d2cb1f75197792d116447dc351" prot="private" virt="non-virtual"><scope>Game</scope><name>m_audioClips</name></member>
+      <member refid="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" prot="private" virt="non-virtual"><scope>Game</scope><name>m_deltaTime</name></member>
+      <member refid="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" prot="private" virt="non-virtual"><scope>Game</scope><name>m_isRunning</name></member>
+      <member refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" prot="private" virt="non-virtual"><scope>Game</scope><name>m_renderer</name></member>
+      <member refid="class_game_1a112021c937e24b38503f5325fcb63af2" prot="private" virt="non-virtual"><scope>Game</scope><name>m_scenes</name></member>
+      <member refid="class_game_1a6e0d70674956416e0294b6b749779e92" prot="private" virt="non-virtual"><scope>Game</scope><name>m_window</name></member>
+      <member refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" prot="private" virt="non-virtual"><scope>Game</scope><name>m_windowHeight</name></member>
+      <member refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" prot="private" virt="non-virtual"><scope>Game</scope><name>m_windowWidth</name></member>
+      <member refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" prot="public" virt="non-virtual"><scope>Game</scope><name>PlaySound</name></member>
+      <member refid="class_game_1a1827c75a4b4ab4a543bf99772a55337c" prot="public" virt="non-virtual"><scope>Game</scope><name>Quit</name></member>
+      <member refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" prot="public" virt="non-virtual"><scope>Game</scope><name>RemoveObject</name></member>
+      <member refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" prot="public" virt="non-virtual"><scope>Game</scope><name>Run</name></member>
+      <member refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" prot="public" virt="non-virtual"><scope>Game</scope><name>SetActiveScene</name></member>
+      <member refid="class_game_1adb05b20574551a26f8cf1dc664782790" prot="private" virt="non-virtual"><scope>Game</scope><name>Start</name></member>
+      <member refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" prot="public" virt="non-virtual"><scope>Game</scope><name>StopSound</name></member>
+      <member refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" prot="private" virt="non-virtual"><scope>Game</scope><name>Update</name></member>
+      <member refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" prot="public" virt="non-virtual"><scope>Game</scope><name>~Game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

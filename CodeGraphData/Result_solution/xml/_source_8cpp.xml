@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_source_8cpp" kind="file">
+    <compoundname>Source.cpp</compoundname>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <includes refid="_back_ground_8h" local="yes">BackGround.h</includes>
+    <includes refid="_button_texture_8h" local="yes">ButtonTexture.h</includes>
+    <includes refid="_text_8h" local="yes">Text.h</includes>
+    <includes refid="_s_m___controller_8h" local="yes">SM_Controller.h</includes>
+    <includes refid="_obstacle_mng_8h" local="yes">ObstacleMng.h</includes>
+    <incdepgraph>
+      <node id="475">
+        <label>Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>BackGround.h</label>
+        <link refid="_back_ground_8h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="462">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>SM_Controller.h</label>
+        <link refid="_s_m___controller_8h"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>string</label>
+      </node>
+      <node id="467">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="477">
+        <label>ObstacleMng.h</label>
+        <link refid="_obstacle_mng_8h"/>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>fstream</label>
+      </node>
+      <node id="461">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="462" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="470">
+        <label>vector</label>
+      </node>
+      <node id="471">
+        <label>iostream</label>
+      </node>
+      <node id="459">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="Source.cpp"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="478">
+        <label>ObstacleCar.h</label>
+        <link refid="_obstacle_car_8h"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>ButtonTexture.h</label>
+        <link refid="_button_texture_8h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>stdio.h</label>
+      </node>
+      <node id="464">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *args[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>args</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp" line="10" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp" bodystart="10" bodyend="157"/>
+        <references refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" compoundref="_game_8cpp" startline="161" endline="166">Game::AddObject</references>
+        <references refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" compoundref="_game_8cpp" startline="194" endline="197">Game::AddSceneToGame</references>
+        <references refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" compoundref="_button_texture_8cpp" startline="53" endline="56">ButtonTexture::AssignSceneLinkIndex</references>
+        <references refid="class_s_m___controller_1ae3b672df74d13d10d2dd1ce71310bb4a" compoundref="_s_m___controller_8cpp" startline="139" endline="142">SM_Controller::AssignTextScore</references>
+        <references refid="class_game_1a5d10a78924d45454645a0b15bfde7624" compoundref="_game_8h" startline="25" endline="25">Game::GetWindowSize</references>
+        <references refid="class_game_1a8ded578027b24871870babe65a939567" compoundref="_game_8cpp" startline="30" endline="98">Game::InitSystems</references>
+        <references refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" compoundref="_game_object_8cpp" startline="47" endline="55">GameObject::LoadFont</references>
+        <references refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" compoundref="_game_8cpp" startline="223" endline="229">Game::LoadSound</references>
+        <references refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" compoundref="_game_object_8cpp" startline="42" endline="45">GameObject::LoadTexture</references>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">GameObject::m_dimensions</references>
+        <references refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" compoundref="_game_object_8h" startline="29">GameObject::m_position</references>
+        <references refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" compoundref="_game_8cpp" startline="231" endline="243">Game::PlaySound</references>
+        <references refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</references>
+        <references refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">Game::SetActiveScene</references>
+        <references refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" compoundref="_game_object_8h" startline="15" endline="15">GameObject::SetName</references>
+        <references refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" compoundref="_text_8cpp" startline="18" endline="20">Text::Update</references>
+        <references refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" compoundref="_game_8cpp" startline="7" endline="22">Game::~Game</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_back_ground_8h" kindref="compound">BackGround.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_button_texture_8h" kindref="compound">ButtonTexture.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_text_8h" kindref="compound">Text.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_m___controller_8h" kindref="compound">SM_Controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_obstacle_mng_8h" kindref="compound">ObstacleMng.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>args[])</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game" kindref="compound">Game</ref><sp/>game<sp/>=<sp/><ref refid="class_game" kindref="compound">Game</ref>(1024,<sp/>768);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(game.<ref refid="class_game_1a8ded578027b24871870babe65a939567" kindref="member">InitSystems</ref>())</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>scenes<sp/>for<sp/>our<sp/>game</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" kindref="member">AddSceneToGame</ref>();</highlight><highlight class="comment">//the<sp/>intro<sp/>scene<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" kindref="member">AddSceneToGame</ref>();</highlight><highlight class="comment">//the<sp/>game<sp/>scene<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" kindref="member">AddSceneToGame</ref>();</highlight><highlight class="comment">//the<sp/>gameover<sp/>scene<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#pragma<sp/>region<sp/>BackGround</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_back_ground" kindref="compound">BackGround</ref>*<sp/>bg<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_back_ground" kindref="compound">BackGround</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bg-&gt;<ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(</highlight><highlight class="stringliteral">&quot;backGround&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(bg,<sp/>0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(bg,<sp/>1);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(bg,<sp/>2);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>background<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bg-&gt;<ref refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" kindref="member">LoadTexture</ref>(</highlight><highlight class="stringliteral">&quot;Assets/Images/BackGround.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bg-&gt;<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref><sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>2<sp/>-<sp/>bg-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>2<sp/>-<sp/>bg-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Road</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_back_ground" kindref="compound">BackGround</ref>*<sp/>rd<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_back_ground" kindref="compound">BackGround</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rd-&gt;SetName(</highlight><highlight class="stringliteral">&quot;road&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(rd,<sp/>1);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>background<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rd-&gt;LoadTexture(</highlight><highlight class="stringliteral">&quot;Assets/Images/Road.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rd-&gt;m_position<sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>3<sp/>-<sp/>rd-&gt;m_dimensions.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>2<sp/>-<sp/>rd-&gt;m_dimensions.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Title</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>title<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>title2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title-&gt;SetName(</highlight><highlight class="stringliteral">&quot;title1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(title,<sp/>0);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonTexture<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title-&gt;LoadFont(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>30);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title-&gt;Update(</highlight><highlight class="stringliteral">&quot;RETROFUTURISTICARCADE&quot;</highlight><highlight class="normal">,<sp/>{<sp/>200,80,255<sp/>});</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title-&gt;m_position<sp/>=<sp/>glm::vec2(glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>2<sp/>-<sp/>title-&gt;m_dimensions.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>6<sp/>-<sp/>title-&gt;m_dimensions.y<sp/>/<sp/>2));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title2-&gt;<ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(</highlight><highlight class="stringliteral">&quot;title2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(title2,<sp/>0);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonTexture<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title2-&gt;<ref refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" kindref="member">LoadFont</ref>(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>30);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title2-&gt;<ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Update</ref>(</highlight><highlight class="stringliteral">&quot;SPEEDSTER<sp/>MADNESS&quot;</highlight><highlight class="normal">,<sp/>{<sp/>20,30,255<sp/>});</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>title2-&gt;<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref><sp/>=<sp/>glm::vec2(glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>2<sp/>-<sp/>title2-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>5<sp/>-<sp/>title2-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>/<sp/>2));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Play<sp/>button</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_button_texture" kindref="compound">ButtonTexture</ref>*<sp/>play_sprite<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_button_texture" kindref="compound">ButtonTexture</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>play_sprite-&gt;<ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(</highlight><highlight class="stringliteral">&quot;playBtn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(play_sprite,<sp/>0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonTexture<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>play_sprite-&gt;<ref refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" kindref="member">AssignSceneLinkIndex</ref>(1);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>play_sprite-&gt;<ref refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" kindref="member">LoadTexture</ref>(</highlight><highlight class="stringliteral">&quot;Assets/Images/ButtonSprite.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>play_sprite-&gt;<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref><sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>5<sp/>-<sp/>play_sprite-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>*<sp/>4<sp/>/<sp/>5<sp/>-<sp/>play_sprite-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>btn_play_text<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_play_text-&gt;SetName(</highlight><highlight class="stringliteral">&quot;btn_play_text&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(btn_play_text,0);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonFont<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_play_text-&gt;LoadFont(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>12);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_play_text-&gt;Update(</highlight><highlight class="stringliteral">&quot;PLAY&quot;</highlight><highlight class="normal">,<sp/>{<sp/>100,150,255<sp/>});</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_play_text-&gt;m_position<sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>5<sp/>-<sp/>btn_play_text-&gt;m_dimensions.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>*<sp/>4<sp/>/<sp/>5<sp/>-<sp/>btn_play_text-&gt;m_dimensions.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="comment">//GAMEOVER<sp/>text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>GAMEOVE_text</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>gameover_text<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameover_text-&gt;SetName(</highlight><highlight class="stringliteral">&quot;gameover_text&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(gameover_text,<sp/>2);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonFont<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameover_text-&gt;LoadFont(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>40);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameover_text-&gt;Update(</highlight><highlight class="stringliteral">&quot;GAME<sp/>OVER&quot;</highlight><highlight class="normal">,<sp/>{<sp/>200,50,255<sp/>});</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameover_text-&gt;m_position<sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>2<sp/>-<sp/>gameover_text-&gt;m_dimensions.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>6<sp/>-<sp/>gameover_text-&gt;m_dimensions.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Replay<sp/>button</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_button_texture" kindref="compound">ButtonTexture</ref>*<sp/>replay_sprite<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_button_texture" kindref="compound">ButtonTexture</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replay_sprite-&gt;SetName(</highlight><highlight class="stringliteral">&quot;replayBtn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(replay_sprite,<sp/>2);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonTexture<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replay_sprite-&gt;AssignSceneLinkIndex(1);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replay_sprite-&gt;LoadTexture(</highlight><highlight class="stringliteral">&quot;Assets/Images/ButtonSprite.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replay_sprite-&gt;m_position<sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>5<sp/>-<sp/>replay_sprite-&gt;m_dimensions.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>*<sp/>4<sp/>/<sp/>5<sp/>-<sp/>replay_sprite-&gt;m_dimensions.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>btn_replay_text<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_replay_text-&gt;SetName(</highlight><highlight class="stringliteral">&quot;btn_replay_text&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(btn_replay_text,<sp/>2);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonFont<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_replay_text-&gt;LoadFont(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>12);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_replay_text-&gt;Update(</highlight><highlight class="stringliteral">&quot;REPLAY&quot;</highlight><highlight class="normal">,<sp/>{<sp/>100,150,255<sp/>});</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn_replay_text-&gt;m_position<sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>5<sp/>-<sp/>btn_replay_text-&gt;m_dimensions.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>*<sp/>4<sp/>/<sp/>5<sp/>-<sp/>btn_replay_text-&gt;m_dimensions.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Obstacles</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_obstacle_mng" kindref="compound">ObstacleMng</ref>*<sp/>cars<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_mng" kindref="compound">ObstacleMng</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cars-&gt;SetName(</highlight><highlight class="stringliteral">&quot;car&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(cars,<sp/>1);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Score</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>score<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_text" kindref="compound">Text</ref>*<sp/>scoreValue<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_text" kindref="compound">Text</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;<ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(</highlight><highlight class="stringliteral">&quot;score&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(score,<sp/>1);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonTexture<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;<ref refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" kindref="member">LoadFont</ref>(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>15);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;<ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Update</ref>(</highlight><highlight class="stringliteral">&quot;SCORE:&quot;</highlight><highlight class="normal">,<sp/>{<sp/>200,80,255<sp/>});</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score-&gt;<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref><sp/>=<sp/>glm::vec2(glm::vec2((game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>*<sp/>3<sp/>/<sp/>4)<sp/>-<sp/>(score-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2),<sp/>(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>6)<sp/>-<sp/>(score-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>/<sp/>2)));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreValue-&gt;<ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(</highlight><highlight class="stringliteral">&quot;scoreValue&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(scoreValue,<sp/>1);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>ButtonTexture<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreValue-&gt;<ref refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" kindref="member">LoadFont</ref>(</highlight><highlight class="stringliteral">&quot;Assets/PressStart2P.ttf&quot;</highlight><highlight class="normal">,<sp/>15);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreValue-&gt;<ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Update</ref>(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,<sp/>{<sp/>100,80,255<sp/>});</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreValue-&gt;<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref><sp/>=<sp/>glm::vec2(glm::vec2((game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>*<sp/>3<sp/>/<sp/>4)<sp/>+<sp/>(score-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2),<sp/>(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>6)<sp/>-<sp/>(scoreValue-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>/<sp/>2)));</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Player</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_m___controller" kindref="compound">SM_Controller</ref>*<sp/>player<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_s_m___controller" kindref="compound">SM_Controller</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;<ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(</highlight><highlight class="stringliteral">&quot;playerObject&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(player,1);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//customize<sp/>player<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;<ref refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" kindref="member">LoadTexture</ref>(</highlight><highlight class="stringliteral">&quot;Assets/Images/SMPlayer1.png&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref><sp/>=<sp/>glm::vec2(game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>3<sp/>-<sp/>player-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2,<sp/>game.<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>/<sp/>2<sp/>-<sp/>player-&gt;<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;<ref refid="class_s_m___controller_1ae3b672df74d13d10d2dd1ce71310bb4a" kindref="member">AssignTextScore</ref>(scoreValue);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Load<sp/>sounds<sp/>for<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Load<sp/>all<sp/>required<sp/>audio<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kindref="member">LoadSound</ref>(</highlight><highlight class="stringliteral">&quot;GameOver&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Assets/Audio/GameOver.mp3&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//check<sp/>sound<sp/>name<sp/>and<sp/>path,<sp/>place<sp/>in<sp/>correct<sp/>spot<sp/>!!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kindref="member">LoadSound</ref>(</highlight><highlight class="stringliteral">&quot;Button&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Assets/Audio/Button.mp3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kindref="member">LoadSound</ref>(</highlight><highlight class="stringliteral">&quot;Impact&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Assets/Audio/Impact.wav&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kindref="member">LoadSound</ref>(</highlight><highlight class="stringliteral">&quot;Intro&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Assets/Audio/Menu.wav&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kindref="member">LoadSound</ref>(</highlight><highlight class="stringliteral">&quot;Sugar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Assets/Audio/Sugar.mp3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" kindref="member">PlaySound</ref>(</highlight><highlight class="stringliteral">&quot;Intro&quot;</highlight><highlight class="normal">,1);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" kindref="member">SetActiveScene</ref>(0);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//once<sp/>you<sp/>Run<sp/>nobody<sp/>is<sp/>gonna<sp/>stop<sp/>you</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" kindref="member">Run</ref>();<sp/></highlight><highlight class="comment">//<sp/>don&apos;t<sp/>add<sp/>anything<sp/>after<sp/>this<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game.<ref refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" kindref="member">~Game</ref>();<sp/></highlight><highlight class="comment">//does<sp/>game<sp/>destructor<sp/>be<sp/>called<sp/>when<sp/>the<sp/>main<sp/>scope<sp/>ends??</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp"/>
+  </compounddef>
+</doxygen>

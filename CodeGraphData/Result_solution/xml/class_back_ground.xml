@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_back_ground" kind="class" prot="public">
+    <compoundname>BackGround</compoundname>
+    <basecompoundref refid="class_game_object" prot="public" virt="non-virtual">GameObject</basecompoundref>
+    <includes refid="_back_ground_8h" local="no">BackGround.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_back_ground_1a6a3fe7aa2ec8d57d372d336cd2d64337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BackGround::BackGround</definition>
+        <argsstring>()</argsstring>
+        <name>BackGround</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" line="10" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_back_ground_1a3732a4f5ab11ab9d10d42d4649878665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BackGround::~BackGround</definition>
+        <argsstring>()</argsstring>
+        <name>~BackGround</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" line="11" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_back_ground_1a5d15f81e147f0eb2d02b793fd2621ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackGround::Start</definition>
+        <argsstring>() override</argsstring>
+        <name>Start</name>
+        <reimplements refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5">Start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" line="13" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_back_ground_1a18ec4a0921f1bf192ae9030436089bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackGround::Update</definition>
+        <argsstring>(float deltaTime, Input input) override</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input" kindref="compound">Input</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" line="14" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_back_ground_1afe00061ea7250bb06534ed4dcb503338" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackGround::OnCollision</definition>
+        <argsstring>(GameObject *collider) override</argsstring>
+        <name>OnCollision</name>
+        <reimplements refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7">OnCollision</reimplements>
+        <param>
+          <type><ref refid="class_game_object" kindref="compound">GameObject</ref> *</type>
+          <declname>collider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" line="16" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>BackGround</label>
+        <link refid="class_back_ground"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>std::vector&lt; std::vector&lt; GameObject * &gt; * &gt;</label>
+        <childnode refid="10" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>std::vector&lt; GameObject * &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>BackGround</label>
+        <link refid="class_back_ground"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="8">
+        <label>Game</label>
+        <link refid="class_game"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>m_scenes</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_audioClips</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_activeScene</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_game</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::vector&lt; AudioClip * &gt;</label>
+        <childnode refid="12" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>std::string</label>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" line="8" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h" bodystart="6" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_back_ground_1a6a3fe7aa2ec8d57d372d336cd2d64337" prot="public" virt="non-virtual"><scope>BackGround</scope><name>BackGround</name></member>
+      <member refid="class_game_object_1a917417da016e4775d1338d4606e3e899" prot="public" virt="non-virtual"><scope>BackGround</scope><name>CollisionPoint</name></member>
+      <member refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" prot="public" virt="virtual"><scope>BackGround</scope><name>Draw</name></member>
+      <member refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" prot="public" virt="non-virtual"><scope>BackGround</scope><name>DrawTextColor</name></member>
+      <member refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" prot="public" virt="non-virtual"><scope>BackGround</scope><name>GameObject</name></member>
+      <member refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" prot="public" virt="non-virtual"><scope>BackGround</scope><name>LoadFont</name></member>
+      <member refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" prot="protected" virt="non-virtual"><scope>BackGround</scope><name>LoadFontInTexture</name></member>
+      <member refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" prot="public" virt="non-virtual"><scope>BackGround</scope><name>LoadTexture</name></member>
+      <member refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" prot="protected" virt="non-virtual"><scope>BackGround</scope><name>LoadTextureFromFile</name></member>
+      <member refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" prot="public" virt="non-virtual"><scope>BackGround</scope><name>m_alpha</name></member>
+      <member refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" prot="public" virt="non-virtual"><scope>BackGround</scope><name>m_dimensions</name></member>
+      <member refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" prot="protected" virt="non-virtual"><scope>BackGround</scope><name>m_font</name></member>
+      <member refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" prot="protected" virt="non-virtual"><scope>BackGround</scope><name>m_game</name></member>
+      <member refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" prot="public" virt="non-virtual"><scope>BackGround</scope><name>m_name</name></member>
+      <member refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" prot="public" virt="non-virtual"><scope>BackGround</scope><name>m_position</name></member>
+      <member refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" prot="protected" virt="non-virtual"><scope>BackGround</scope><name>m_renderer</name></member>
+      <member refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" prot="public" virt="non-virtual"><scope>BackGround</scope><name>m_rotation</name></member>
+      <member refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" prot="protected" virt="non-virtual"><scope>BackGround</scope><name>m_texture</name></member>
+      <member refid="class_back_ground_1afe00061ea7250bb06534ed4dcb503338" prot="public" virt="virtual"><scope>BackGround</scope><name>OnCollision</name></member>
+      <member refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" prot="public" virt="non-virtual"><scope>BackGround</scope><name>SetName</name></member>
+      <member refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" prot="public" virt="non-virtual"><scope>BackGround</scope><name>Setup</name></member>
+      <member refid="class_back_ground_1a5d15f81e147f0eb2d02b793fd2621ada" prot="public" virt="virtual"><scope>BackGround</scope><name>Start</name></member>
+      <member refid="class_back_ground_1a18ec4a0921f1bf192ae9030436089bcb" prot="public" virt="virtual"><scope>BackGround</scope><name>Update</name></member>
+      <member refid="class_back_ground_1a3732a4f5ab11ab9d10d42d4649878665" prot="public" virt="non-virtual"><scope>BackGround</scope><name>~BackGround</name></member>
+      <member refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" virt="non-virtual"><scope>BackGround</scope><name>~GameObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

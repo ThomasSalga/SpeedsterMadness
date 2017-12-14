@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_f189c50d34c091fff060fbd1418985aa" kind="dir">
+    <compoundname>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness</compoundname>
+    <innerfile refid="_back_ground_8cpp">BackGround.cpp</innerfile>
+    <innerfile refid="_back_ground_8h">BackGround.h</innerfile>
+    <innerfile refid="_button_texture_8cpp">ButtonTexture.cpp</innerfile>
+    <innerfile refid="_button_texture_8h">ButtonTexture.h</innerfile>
+    <innerfile refid="_game_8cpp">Game.cpp</innerfile>
+    <innerfile refid="_game_8h">Game.h</innerfile>
+    <innerfile refid="_game_object_8cpp">GameObject.cpp</innerfile>
+    <innerfile refid="_game_object_8h">GameObject.h</innerfile>
+    <innerfile refid="_input_8h">Input.h</innerfile>
+    <innerfile refid="_obstacle_car_8cpp">ObstacleCar.cpp</innerfile>
+    <innerfile refid="_obstacle_car_8h">ObstacleCar.h</innerfile>
+    <innerfile refid="_obstacle_mng_8cpp">ObstacleMng.cpp</innerfile>
+    <innerfile refid="_obstacle_mng_8h">ObstacleMng.h</innerfile>
+    <innerfile refid="_s_m___controller_8cpp">SM_Controller.cpp</innerfile>
+    <innerfile refid="_s_m___controller_8h">SM_Controller.h</innerfile>
+    <innerfile refid="_source_8cpp">Source.cpp</innerfile>
+    <innerfile refid="_text_8cpp">Text.cpp</innerfile>
+    <innerfile refid="_text_8h">Text.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/"/>
+  </compounddef>
+</doxygen>

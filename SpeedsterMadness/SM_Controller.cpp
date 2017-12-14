@@ -15,17 +15,21 @@ void SM_Controller::Start()
 {
 	m_position.x = (m_game->GetWindowSize().x / 3) - (m_dimensions.x / 2);
 	m_position.y = (m_game->GetWindowSize().y *2 / 3) - (m_dimensions.y / 2);
+
+	ReadFromFile();
+	m_score = 0;
 }
 
 void SM_Controller::Update(float deltaTime, Input input)
 {
 	//update score
 	m_time += deltaTime;
-	std::cout << std::to_string(m_time) << std::endl;
+
 	if (m_time > 1)
 	{
-		SetScore(m_score + 10);
-		std::cout << m_scoreText << std::endl;
+		m_score += 10;
+		SetHighScore(m_score);
+		m_scoreText->SetText(std::to_string(m_score));
 		m_time = 0;
 	}
 	//update Inputs
@@ -68,6 +72,7 @@ void SM_Controller::OnCollision(GameObject * collider)
 	if (collider->m_name.compare(0, 3, "car") == 0)
 	{
 		std::cout << m_name << " collided with " << collider->m_name << " GAME OVER" << std::endl;
+		WriteOnFile(m_highScore);
 		//clear scene from obstacles for replay
 		std::string name;
 		m_game->PlaySound("Impact", 0);
@@ -77,16 +82,53 @@ void SM_Controller::OnCollision(GameObject * collider)
 			name += std::to_string(i);
 			m_game->RemoveObject(name,1);
 		}
+		m_scoreText->SetText(std::to_string(0));
 		m_game->StopSound("Sugar");
 		m_game->PlaySound("GameOver", 1);
 		m_game->SetActiveScene(2);
 	}
 }
 
-void SM_Controller::SetScore(int score)
+void SM_Controller::ReadFromFile() 
 {
-	m_score = score; 
-	m_scoreText->SetText(std::to_string(m_score));
+	std::string line;
+	std::ifstream myfile("Assets/example.txt");
+	if (myfile.is_open())
+	{
+		if (getline(myfile, line));
+		{
+			m_highScore = std::stoi(line);
+		}
+		myfile.close();
+	}
+	else
+	{
+		std::cout << "Unable to open file, creating a new one";
+		std::ofstream myfile("Assets/example.txt");
+		myfile << "0";
+		myfile.close();
+	}
+}
+
+void SM_Controller::WriteOnFile(int score)
+{
+	std::string line;
+	line = std::to_string(score);
+	std::ofstream myfile("Assets/example.txt");
+
+	if (myfile.is_open())
+	{
+		myfile << line;
+		myfile.close();
+	}
+}
+
+void SM_Controller::SetHighScore(int score)
+{
+	if (score > m_highScore)
+	{
+		m_highScore = score;
+	}
 }
 
 int SM_Controller::GetScore()

@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_game_object" kind="class" prot="public" abstract="yes">
+    <compoundname>GameObject</compoundname>
+    <derivedcompoundref refid="class_back_ground" prot="public" virt="non-virtual">BackGround</derivedcompoundref>
+    <derivedcompoundref refid="class_button_texture" prot="public" virt="non-virtual">ButtonTexture</derivedcompoundref>
+    <derivedcompoundref refid="class_obstacle_car" prot="public" virt="non-virtual">ObstacleCar</derivedcompoundref>
+    <derivedcompoundref refid="class_obstacle_mng" prot="public" virt="non-virtual">ObstacleMng</derivedcompoundref>
+    <derivedcompoundref refid="class_s_m___controller" prot="public" virt="non-virtual">SM_Controller</derivedcompoundref>
+    <derivedcompoundref refid="class_text" prot="public" virt="non-virtual">Text</derivedcompoundref>
+    <includes refid="_game_object_8h" local="no">GameObject.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GameObject::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="28" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">SM_Controller::OnCollision</referencedby>
+        <referencedby refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" compoundref="_game_object_8h" startline="15" endline="15">SetName</referencedby>
+        <referencedby refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" compoundref="_obstacle_car_8cpp" startline="30" endline="39">ObstacleCar::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" prot="public" static="no" mutable="no">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 GameObject::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <initializer>{ 0,0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="29" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_game_object_1a917417da016e4775d1338d4606e3e899" compoundref="_game_object_8cpp" startline="33" endline="40">CollisionPoint</referencedby>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+        <referencedby refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" compoundref="_game_object_8cpp" startline="21" endline="31">Draw</referencedby>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+        <referencedby refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" compoundref="_obstacle_car_8cpp" startline="15" endline="28">ObstacleCar::Start</referencedby>
+        <referencedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" compoundref="_s_m___controller_8cpp" startline="14" endline="21">SM_Controller::Start</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+        <referencedby refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" compoundref="_obstacle_car_8cpp" startline="30" endline="39">ObstacleCar::Update</referencedby>
+        <referencedby refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" compoundref="_game_8cpp" startline="269" endline="295">Game::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1ad4a29553d11fff56d1a3190988538641" prot="public" static="no" mutable="no">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 GameObject::m_dimensions</definition>
+        <argsstring></argsstring>
+        <name>m_dimensions</name>
+        <initializer>{ 0,0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="30" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_game_object_1a917417da016e4775d1338d4606e3e899" compoundref="_game_object_8cpp" startline="33" endline="40">CollisionPoint</referencedby>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+        <referencedby refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" compoundref="_game_object_8cpp" startline="21" endline="31">Draw</referencedby>
+        <referencedby refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" compoundref="_obstacle_car_8h" startline="19" endline="19">ObstacleCar::GetMovementArea</referencedby>
+        <referencedby refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" compoundref="_game_object_8cpp" startline="99" endline="131">LoadFontInTexture</referencedby>
+        <referencedby refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" compoundref="_game_object_8cpp" startline="66" endline="95">LoadTextureFromFile</referencedby>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+        <referencedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" compoundref="_s_m___controller_8cpp" startline="14" endline="21">SM_Controller::Start</referencedby>
+        <referencedby refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" compoundref="_obstacle_car_8cpp" startline="15" endline="28">ObstacleCar::Start</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+        <referencedby refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" compoundref="_game_8cpp" startline="269" endline="295">Game::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1a85d303e65cfe655f9127649e04fd9850" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double GameObject::m_rotation</definition>
+        <argsstring></argsstring>
+        <name>m_rotation</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="31" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+        <referencedby refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" compoundref="_game_object_8cpp" startline="21" endline="31">Draw</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" prot="public" static="no" mutable="no">
+        <type>Uint8</type>
+        <definition>Uint8 GameObject::m_alpha</definition>
+        <argsstring></argsstring>
+        <name>m_alpha</name>
+        <initializer>= 255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="32" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+        <referencedby refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" compoundref="_game_object_8cpp" startline="21" endline="31">Draw</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" prot="protected" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* GameObject::m_texture</definition>
+        <argsstring></argsstring>
+        <name>m_texture</name>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="39" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+        <referencedby refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" compoundref="_game_object_8cpp" startline="21" endline="31">Draw</referencedby>
+        <referencedby refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" compoundref="_game_object_8cpp" startline="57" endline="64">DrawTextColor</referencedby>
+        <referencedby refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" compoundref="_game_object_8cpp" startline="42" endline="45">LoadTexture</referencedby>
+        <referencedby refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" compoundref="_game_object_8cpp" startline="8" endline="13">~GameObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1a2be93417ea72201ce5edc093167b2f68" prot="protected" static="no" mutable="no">
+        <type>SDL_Renderer *</type>
+        <definition>SDL_Renderer* GameObject::m_renderer</definition>
+        <argsstring></argsstring>
+        <name>m_renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="40" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+        <referencedby refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" compoundref="_game_object_8cpp" startline="21" endline="31">Draw</referencedby>
+        <referencedby refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" compoundref="_game_object_8cpp" startline="99" endline="131">LoadFontInTexture</referencedby>
+        <referencedby refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" compoundref="_game_object_8cpp" startline="66" endline="95">LoadTextureFromFile</referencedby>
+        <referencedby refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" compoundref="_game_object_8cpp" startline="15" endline="19">Setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1ab71046da7600179f070714a5959f0f8a" prot="protected" static="no" mutable="no">
+        <type>TTF_Font *</type>
+        <definition>TTF_Font* GameObject::m_font</definition>
+        <argsstring></argsstring>
+        <name>m_font</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="42" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" compoundref="_game_object_8cpp" startline="47" endline="55">LoadFont</referencedby>
+        <referencedby refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" compoundref="_game_object_8cpp" startline="99" endline="131">LoadFontInTexture</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_game" kindref="compound">Game</ref> *</type>
+        <definition>Game* GameObject::m_game</definition>
+        <argsstring></argsstring>
+        <name>m_game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="43" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" compoundref="_obstacle_mng_8cpp" startline="42" endline="56">ObstacleMng::AddObstacle</referencedby>
+        <referencedby refid="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" compoundref="_s_m___controller_8h" startline="18" endline="18">SM_Controller::GetMovementArea</referencedby>
+        <referencedby refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" compoundref="_obstacle_car_8h" startline="19" endline="19">ObstacleCar::GetMovementArea</referencedby>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">SM_Controller::OnCollision</referencedby>
+        <referencedby refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" compoundref="_game_object_8cpp" startline="15" endline="19">Setup</referencedby>
+        <referencedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" compoundref="_s_m___controller_8cpp" startline="14" endline="21">SM_Controller::Start</referencedby>
+        <referencedby refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" compoundref="_obstacle_car_8cpp" startline="15" endline="28">ObstacleCar::Start</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+        <referencedby refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" compoundref="_obstacle_car_8cpp" startline="30" endline="39">ObstacleCar::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameObject::GameObject</definition>
+        <argsstring>()</argsstring>
+        <name>GameObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="11" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameObject::~GameObject</definition>
+        <argsstring>()</argsstring>
+        <name>~GameObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="12" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="8" bodyend="13"/>
+        <references refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" compoundref="_game_object_8h" startline="39">m_texture</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameObject::Setup</definition>
+        <argsstring>(SDL_Renderer *renderer, Game *game)</argsstring>
+        <name>Setup</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_game" kindref="compound">Game</ref> *</type>
+          <declname>game</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="14" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="15" bodyend="19"/>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">m_game</references>
+        <references refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" compoundref="_game_object_8h" startline="40">m_renderer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameObject::SetName</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="15" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="15" bodyend="15"/>
+        <references refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" compoundref="_game_object_8h" startline="28">m_name</references>
+        <referencedby refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" compoundref="_obstacle_mng_8cpp" startline="42" endline="56">ObstacleMng::AddObstacle</referencedby>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a0cfa683eafa44f254a4485903fd896f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void GameObject::Start</definition>
+        <argsstring>()=0</argsstring>
+        <name>Start</name>
+        <reimplementedby refid="class_text_1a859d95c2410ac57a59e0e6b4496082a2">Start</reimplementedby>
+        <reimplementedby refid="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4">Start</reimplementedby>
+        <reimplementedby refid="class_obstacle_mng_1a29db0a12c89a838511e44c3cabe86672">Start</reimplementedby>
+        <reimplementedby refid="class_back_ground_1a5d15f81e147f0eb2d02b793fd2621ada">Start</reimplementedby>
+        <reimplementedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15">Start</reimplementedby>
+        <reimplementedby refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d">Start</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void GameObject::Update</definition>
+        <argsstring>(float deltaTime, Input input)=0</argsstring>
+        <name>Update</name>
+        <reimplementedby refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0">Update</reimplementedby>
+        <reimplementedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759">Update</reimplementedby>
+        <reimplementedby refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc">Update</reimplementedby>
+        <reimplementedby refid="class_back_ground_1a18ec4a0921f1bf192ae9030436089bcb">Update</reimplementedby>
+        <reimplementedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae">Update</reimplementedby>
+        <reimplementedby refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1">Update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input" kindref="compound">Input</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GameObject::Draw</definition>
+        <argsstring>()</argsstring>
+        <name>Draw</name>
+        <reimplementedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd">Draw</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="19" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="21" bodyend="31"/>
+        <references refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" compoundref="_game_object_8h" startline="32">m_alpha</references>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">m_dimensions</references>
+        <references refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" compoundref="_game_object_8h" startline="29">m_position</references>
+        <references refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" compoundref="_game_object_8h" startline="40">m_renderer</references>
+        <references refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" compoundref="_game_object_8h" startline="31">m_rotation</references>
+        <references refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" compoundref="_game_object_8h" startline="39">m_texture</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameObject::LoadTexture</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>LoadTexture</name>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="21" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="42" bodyend="45"/>
+        <references refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" compoundref="_game_object_8cpp" startline="66" endline="95">LoadTextureFromFile</references>
+        <references refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" compoundref="_game_object_8h" startline="39">m_texture</references>
+        <referencedby refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" compoundref="_obstacle_mng_8cpp" startline="42" endline="56">ObstacleMng::AddObstacle</referencedby>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a663d43ebc37979b51372d34a95509f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameObject::LoadFont</definition>
+        <argsstring>(std::string path, int size)</argsstring>
+        <name>LoadFont</name>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="22" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="47" bodyend="55"/>
+        <references refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" compoundref="_game_object_8h" startline="42">m_font</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameObject::DrawTextColor</definition>
+        <argsstring>(std::string text, SDL_Color color)</argsstring>
+        <name>DrawTextColor</name>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>SDL_Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="23" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="57" bodyend="64"/>
+        <references refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" compoundref="_game_object_8cpp" startline="99" endline="131">LoadFontInTexture</references>
+        <references refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" compoundref="_game_object_8h" startline="39">m_texture</references>
+        <referencedby refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" compoundref="_text_8cpp" startline="30" endline="42">Text::Draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a917417da016e4775d1338d4606e3e899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GameObject::CollisionPoint</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>CollisionPoint</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="25" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="33" bodyend="40"/>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">m_dimensions</references>
+        <references refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" compoundref="_game_object_8h" startline="29">m_position</references>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a7561030c3419dfcd4fce8198b93463c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void GameObject::OnCollision</definition>
+        <argsstring>(GameObject *object)=0</argsstring>
+        <name>OnCollision</name>
+        <reimplementedby refid="class_text_1acd99b388d88151665247bda7256189a1">OnCollision</reimplementedby>
+        <reimplementedby refid="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568">OnCollision</reimplementedby>
+        <reimplementedby refid="class_obstacle_mng_1ae671051b5b292a587dfc04a71bb36c1b">OnCollision</reimplementedby>
+        <reimplementedby refid="class_back_ground_1afe00061ea7250bb06534ed4dcb503338">OnCollision</reimplementedby>
+        <reimplementedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473">OnCollision</reimplementedby>
+        <reimplementedby refid="class_obstacle_car_1aa6fce90a67b2952af2670c471df74159">OnCollision</reimplementedby>
+        <param>
+          <type><ref refid="class_game_object" kindref="compound">GameObject</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="26" column="1"/>
+        <referencedby refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" compoundref="_game_8cpp" startline="269" endline="295">Game::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture * GameObject::LoadTextureFromFile</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>LoadTextureFromFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="36" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="66" bodyend="95"/>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">m_dimensions</references>
+        <references refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" compoundref="_game_object_8h" startline="40">m_renderer</references>
+        <referencedby refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" compoundref="_game_object_8cpp" startline="42" endline="45">LoadTexture</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture * GameObject::LoadFontInTexture</definition>
+        <argsstring>(std::string text, SDL_Color color)</argsstring>
+        <name>LoadFontInTexture</name>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>SDL_Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="37" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp" bodystart="99" bodyend="131"/>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">m_dimensions</references>
+        <references refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" compoundref="_game_object_8h" startline="42">m_font</references>
+        <references refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" compoundref="_game_object_8h" startline="40">m_renderer</references>
+        <referencedby refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" compoundref="_game_object_8cpp" startline="57" endline="64">DrawTextColor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>ButtonTexture</label>
+        <link refid="class_button_texture"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>ObstacleCar</label>
+        <link refid="class_obstacle_car"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>BackGround</label>
+        <link refid="class_back_ground"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>ObstacleMng</label>
+        <link refid="class_obstacle_mng"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>Text</label>
+        <link refid="class_text"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>SM_Controller</label>
+        <link refid="class_s_m___controller"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>std::vector&lt; std::vector&lt; GameObject * &gt; * &gt;</label>
+        <childnode refid="45" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>std::vector&lt; GameObject * &gt;</label>
+        <childnode refid="42" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="43">
+        <label>Game</label>
+        <link refid="class_game"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>m_scenes</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>m_audioClips</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>m_activeScene</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>m_game</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>std::vector&lt; AudioClip * &gt;</label>
+        <childnode refid="47" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>std::string</label>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" line="9" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h" bodystart="8" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_game_object_1a917417da016e4775d1338d4606e3e899" prot="public" virt="non-virtual"><scope>GameObject</scope><name>CollisionPoint</name></member>
+      <member refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" prot="public" virt="virtual"><scope>GameObject</scope><name>Draw</name></member>
+      <member refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" prot="public" virt="non-virtual"><scope>GameObject</scope><name>DrawTextColor</name></member>
+      <member refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" prot="public" virt="non-virtual"><scope>GameObject</scope><name>GameObject</name></member>
+      <member refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" prot="public" virt="non-virtual"><scope>GameObject</scope><name>LoadFont</name></member>
+      <member refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" prot="protected" virt="non-virtual"><scope>GameObject</scope><name>LoadFontInTexture</name></member>
+      <member refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" prot="public" virt="non-virtual"><scope>GameObject</scope><name>LoadTexture</name></member>
+      <member refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" prot="protected" virt="non-virtual"><scope>GameObject</scope><name>LoadTextureFromFile</name></member>
+      <member refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" prot="public" virt="non-virtual"><scope>GameObject</scope><name>m_alpha</name></member>
+      <member refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" prot="public" virt="non-virtual"><scope>GameObject</scope><name>m_dimensions</name></member>
+      <member refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" prot="protected" virt="non-virtual"><scope>GameObject</scope><name>m_font</name></member>
+      <member refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" prot="protected" virt="non-virtual"><scope>GameObject</scope><name>m_game</name></member>
+      <member refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" prot="public" virt="non-virtual"><scope>GameObject</scope><name>m_name</name></member>
+      <member refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" prot="public" virt="non-virtual"><scope>GameObject</scope><name>m_position</name></member>
+      <member refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" prot="protected" virt="non-virtual"><scope>GameObject</scope><name>m_renderer</name></member>
+      <member refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" prot="public" virt="non-virtual"><scope>GameObject</scope><name>m_rotation</name></member>
+      <member refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" prot="protected" virt="non-virtual"><scope>GameObject</scope><name>m_texture</name></member>
+      <member refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7" prot="public" virt="pure-virtual"><scope>GameObject</scope><name>OnCollision</name></member>
+      <member refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" prot="public" virt="non-virtual"><scope>GameObject</scope><name>SetName</name></member>
+      <member refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" prot="public" virt="non-virtual"><scope>GameObject</scope><name>Setup</name></member>
+      <member refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5" prot="public" virt="pure-virtual"><scope>GameObject</scope><name>Start</name></member>
+      <member refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc" prot="public" virt="pure-virtual"><scope>GameObject</scope><name>Update</name></member>
+      <member refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" virt="non-virtual"><scope>GameObject</scope><name>~GameObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

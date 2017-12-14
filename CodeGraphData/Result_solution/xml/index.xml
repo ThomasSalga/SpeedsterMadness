@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="struct_audio_clip" kind="struct"><name>AudioClip</name>
+    <member refid="struct_audio_clip_1a089093dcab6a372eb7ae66548862a8a8" kind="variable"><name>m_name</name></member>
+    <member refid="struct_audio_clip_1a3279dc6f7a601b3aa9ece33406127558" kind="variable"><name>m_clip</name></member>
+    <member refid="struct_audio_clip_1a8fbd5e738bae36624b344382789c1ddb" kind="variable"><name>m_channel</name></member>
+  </compound>
+  <compound refid="class_back_ground" kind="class"><name>BackGround</name>
+    <member refid="class_back_ground_1a6a3fe7aa2ec8d57d372d336cd2d64337" kind="function"><name>BackGround</name></member>
+    <member refid="class_back_ground_1a3732a4f5ab11ab9d10d42d4649878665" kind="function"><name>~BackGround</name></member>
+    <member refid="class_back_ground_1a5d15f81e147f0eb2d02b793fd2621ada" kind="function"><name>Start</name></member>
+    <member refid="class_back_ground_1a18ec4a0921f1bf192ae9030436089bcb" kind="function"><name>Update</name></member>
+    <member refid="class_back_ground_1afe00061ea7250bb06534ed4dcb503338" kind="function"><name>OnCollision</name></member>
+  </compound>
+  <compound refid="class_button_texture" kind="class"><name>ButtonTexture</name>
+    <member refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" kind="variable"><name>m_sceneIndex</name></member>
+    <member refid="class_button_texture_1ae730713c3023af54674c7ab5fe7aedab" kind="function"><name>ButtonTexture</name></member>
+    <member refid="class_button_texture_1ad4360b962671babb6c975cb17f161885" kind="function"><name>~ButtonTexture</name></member>
+    <member refid="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4" kind="function"><name>Start</name></member>
+    <member refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" kind="function"><name>Update</name></member>
+    <member refid="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568" kind="function"><name>OnCollision</name></member>
+    <member refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" kind="function"><name>AssignSceneLinkIndex</name></member>
+  </compound>
+  <compound refid="class_game" kind="class"><name>Game</name>
+    <member refid="class_game_1a5a76bc267138492ad42f269f0f92669b" kind="variable"><name>m_activeScene</name></member>
+    <member refid="class_game_1a112021c937e24b38503f5325fcb63af2" kind="variable"><name>m_scenes</name></member>
+    <member refid="class_game_1adf6a05d2cb1f75197792d116447dc351" kind="variable"><name>m_audioClips</name></member>
+    <member refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" kind="variable"><name>m_windowHeight</name></member>
+    <member refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" kind="variable"><name>m_windowWidth</name></member>
+    <member refid="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" kind="variable"><name>m_isRunning</name></member>
+    <member refid="class_game_1a56e10102cb5ba809d8b31de68af56a7e" kind="variable"><name>m_activeSceneIndex</name></member>
+    <member refid="class_game_1a6e0d70674956416e0294b6b749779e92" kind="variable"><name>m_window</name></member>
+    <member refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" kind="variable"><name>m_renderer</name></member>
+    <member refid="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" kind="variable"><name>m_deltaTime</name></member>
+    <member refid="class_game_1ad59df6562a58a614fda24622d3715b65" kind="function"><name>Game</name></member>
+    <member refid="class_game_1a5bc07cf8947858f32637943836cc6f8e" kind="function"><name>Game</name></member>
+    <member refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" kind="function"><name>~Game</name></member>
+    <member refid="class_game_1a8ded578027b24871870babe65a939567" kind="function"><name>InitSystems</name></member>
+    <member refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" kind="function"><name>Run</name></member>
+    <member refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kind="function"><name>GetWindowSize</name></member>
+    <member refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kind="function"><name>AddObject</name></member>
+    <member refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" kind="function"><name>RemoveObject</name></member>
+    <member refid="class_game_1af2765ff96ef807dddb2a06bbe9057b18" kind="function"><name>ClearScene</name></member>
+    <member refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" kind="function"><name>AddSceneToGame</name></member>
+    <member refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" kind="function"><name>SetActiveScene</name></member>
+    <member refid="class_game_1aee36fbc84dea2886feb4cab048c86314" kind="function"><name>GetActiveScene</name></member>
+    <member refid="class_game_1a20968d3e7684406c218c78f1636bcc9b" kind="function"><name>ClearSounds</name></member>
+    <member refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kind="function"><name>LoadSound</name></member>
+    <member refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" kind="function"><name>PlaySound</name></member>
+    <member refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" kind="function"><name>StopSound</name></member>
+    <member refid="class_game_1a1827c75a4b4ab4a543bf99772a55337c" kind="function"><name>Quit</name></member>
+    <member refid="class_game_1adb05b20574551a26f8cf1dc664782790" kind="function"><name>Start</name></member>
+    <member refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" kind="function"><name>Update</name></member>
+    <member refid="class_game_1aad2c20e2c5529244095c50c238911e30" kind="function"><name>Draw</name></member>
+    <member refid="class_game_1aa479cf13c7537f901423498c7dcce328" kind="function"><name>DrawText</name></member>
+  </compound>
+  <compound refid="class_game_object" kind="class"><name>GameObject</name>
+    <member refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" kind="variable"><name>m_name</name></member>
+    <member refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kind="variable"><name>m_position</name></member>
+    <member refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kind="variable"><name>m_dimensions</name></member>
+    <member refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" kind="variable"><name>m_rotation</name></member>
+    <member refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" kind="variable"><name>m_alpha</name></member>
+    <member refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" kind="variable"><name>m_texture</name></member>
+    <member refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" kind="variable"><name>m_renderer</name></member>
+    <member refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" kind="variable"><name>m_font</name></member>
+    <member refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kind="variable"><name>m_game</name></member>
+    <member refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" kind="function"><name>GameObject</name></member>
+    <member refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" kind="function"><name>~GameObject</name></member>
+    <member refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" kind="function"><name>Setup</name></member>
+    <member refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kind="function"><name>SetName</name></member>
+    <member refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5" kind="function"><name>Start</name></member>
+    <member refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc" kind="function"><name>Update</name></member>
+    <member refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" kind="function"><name>Draw</name></member>
+    <member refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" kind="function"><name>LoadTexture</name></member>
+    <member refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" kind="function"><name>LoadFont</name></member>
+    <member refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" kind="function"><name>DrawTextColor</name></member>
+    <member refid="class_game_object_1a917417da016e4775d1338d4606e3e899" kind="function"><name>CollisionPoint</name></member>
+    <member refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7" kind="function"><name>OnCollision</name></member>
+    <member refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" kind="function"><name>LoadTextureFromFile</name></member>
+    <member refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" kind="function"><name>LoadFontInTexture</name></member>
+  </compound>
+  <compound refid="class_input" kind="class"><name>Input</name>
+    <member refid="class_input_1a359e935807893d306a9ab8714d9aac26" kind="variable"><name>keyboardState</name></member>
+    <member refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" kind="variable"><name>mouseState</name></member>
+    <member refid="class_input_1abae3f379d3f157cf42dc857309832dba" kind="function"><name>Input</name></member>
+    <member refid="class_input_1af2db35ba67c8a8ccd23bef6a482fc291" kind="function"><name>~Input</name></member>
+  </compound>
+  <compound refid="struct_mouse_state_descriptor" kind="struct"><name>MouseStateDescriptor</name>
+    <member refid="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" kind="variable"><name>x</name></member>
+    <member refid="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" kind="variable"><name>y</name></member>
+    <member refid="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" kind="variable"><name>lPressed</name></member>
+    <member refid="struct_mouse_state_descriptor_1a7d31f55333e1576b76a5d612aa3518e0" kind="variable"><name>rPressed</name></member>
+  </compound>
+  <compound refid="class_obstacle_car" kind="class"><name>ObstacleCar</name>
+    <member refid="class_obstacle_car_1a4754276084d106d5ecd685abf34cb9b1" kind="variable"><name>m_velocity</name></member>
+    <member refid="class_obstacle_car_1a2f7d377ec04d415fe6990cc780b8bec8" kind="variable"><name>m_movX</name></member>
+    <member refid="class_obstacle_car_1a423737d510d102e8dde6ab2945afc8a9" kind="function"><name>ObstacleCar</name></member>
+    <member refid="class_obstacle_car_1afa30a6a1263346fd1e2be8a93ee13d1e" kind="function"><name>~ObstacleCar</name></member>
+    <member refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" kind="function"><name>Start</name></member>
+    <member refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" kind="function"><name>Update</name></member>
+    <member refid="class_obstacle_car_1aa6fce90a67b2952af2670c471df74159" kind="function"><name>OnCollision</name></member>
+    <member refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" kind="function"><name>GetMovementArea</name></member>
+  </compound>
+  <compound refid="class_obstacle_mng" kind="class"><name>ObstacleMng</name>
+    <member refid="class_obstacle_mng_1ad7349a90620d5834d91df4af1bd93449" kind="variable"><name>myObstacles</name></member>
+    <member refid="class_obstacle_mng_1ac172471984875abdf7d83df3ee010b92" kind="variable"><name>time</name></member>
+    <member refid="class_obstacle_mng_1a9b79b0187c0d93bfe8d083893b50ac76" kind="variable"><name>obstacles</name></member>
+    <member refid="class_obstacle_mng_1afa60bc1cbf255405d38c793cf710dbfb" kind="variable"><name>pathway</name></member>
+    <member refid="class_obstacle_mng_1a36e59fa672aa0c15f7bc1c70b48bc5ce" kind="function"><name>ObstacleMng</name></member>
+    <member refid="class_obstacle_mng_1adb3e9a6ba882d7c66581a9711d669b55" kind="function"><name>~ObstacleMng</name></member>
+    <member refid="class_obstacle_mng_1a29db0a12c89a838511e44c3cabe86672" kind="function"><name>Start</name></member>
+    <member refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" kind="function"><name>Update</name></member>
+    <member refid="class_obstacle_mng_1ae671051b5b292a587dfc04a71bb36c1b" kind="function"><name>OnCollision</name></member>
+    <member refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" kind="function"><name>AddObstacle</name></member>
+    <member refid="class_obstacle_mng_1adccb014991f61aec9e3e33c0f4b58750" kind="function"><name>EraseAll</name></member>
+  </compound>
+  <compound refid="class_s_m___controller" kind="class"><name>SM_Controller</name>
+    <member refid="class_s_m___controller_1a55583aa5bd7234677b701714fc8ab435" kind="variable"><name>m_scoreText</name></member>
+    <member refid="class_s_m___controller_1a82a399755add3bdfab97a9d3157f748d" kind="variable"><name>m_score</name></member>
+    <member refid="class_s_m___controller_1a717d234fc8a7f1dcd09efc13e843a813" kind="variable"><name>m_highScore</name></member>
+    <member refid="class_s_m___controller_1a4dc4c4f30d35b5096d45a46b5f37fb7b" kind="variable"><name>m_movX</name></member>
+    <member refid="class_s_m___controller_1a3e112ff43679d5f71e974262f2d46c2e" kind="variable"><name>m_time</name></member>
+    <member refid="class_s_m___controller_1a3131fd81e10456491bea016039573be6" kind="function"><name>SM_Controller</name></member>
+    <member refid="class_s_m___controller_1ab65437bf69181217eed02614217c84c1" kind="function"><name>~SM_Controller</name></member>
+    <member refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" kind="function"><name>Start</name></member>
+    <member refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" kind="function"><name>Update</name></member>
+    <member refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" kind="function"><name>OnCollision</name></member>
+    <member refid="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" kind="function"><name>GetMovementArea</name></member>
+    <member refid="class_s_m___controller_1a577182bf223172d2aec381c375f40b79" kind="function"><name>SetHighScore</name></member>
+    <member refid="class_s_m___controller_1af19bc8dbcae688ee820c5932d1232e25" kind="function"><name>GetScore</name></member>
+    <member refid="class_s_m___controller_1ae3b672df74d13d10d2dd1ce71310bb4a" kind="function"><name>AssignTextScore</name></member>
+    <member refid="class_s_m___controller_1a81c5929a048061ffbe456db8b8fced24" kind="function"><name>ReadFromFile</name></member>
+    <member refid="class_s_m___controller_1acd14e179f00b999221c7b630ab306a51" kind="function"><name>WriteOnFile</name></member>
+  </compound>
+  <compound refid="class_text" kind="class"><name>Text</name>
+    <member refid="class_text_1a8d2e39bee772f386cb79557fef0959ad" kind="variable"><name>m_text</name></member>
+    <member refid="class_text_1a6ebe4c18863e9e7af92f85c3fc83f6a4" kind="variable"><name>m_color</name></member>
+    <member refid="class_text_1ab3e26143fccc52699bcc5149cae852bc" kind="function"><name>Text</name></member>
+    <member refid="class_text_1a2d49e5c280e205125b149f7777ae30c7" kind="function"><name>~Text</name></member>
+    <member refid="class_text_1a859d95c2410ac57a59e0e6b4496082a2" kind="function"><name>Start</name></member>
+    <member refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kind="function"><name>Update</name></member>
+    <member refid="class_text_1a49fda9df00dc8355a727094dc37ced68" kind="function"><name>Update</name></member>
+    <member refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" kind="function"><name>Draw</name></member>
+    <member refid="class_text_1acd99b388d88151665247bda7256189a1" kind="function"><name>OnCollision</name></member>
+    <member refid="class_text_1a772bb4f5e415e505aa629d7aac97f1cb" kind="function"><name>SetText</name></member>
+    <member refid="class_text_1acdb9d84e614d24736359551406891a81" kind="function"><name>SetColor</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_back_ground_8cpp" kind="file"><name>BackGround.cpp</name>
+  </compound>
+  <compound refid="_back_ground_8h" kind="file"><name>BackGround.h</name>
+  </compound>
+  <compound refid="_button_texture_8cpp" kind="file"><name>ButtonTexture.cpp</name>
+  </compound>
+  <compound refid="_button_texture_8h" kind="file"><name>ButtonTexture.h</name>
+  </compound>
+  <compound refid="_game_8cpp" kind="file"><name>Game.cpp</name>
+  </compound>
+  <compound refid="_game_8h" kind="file"><name>Game.h</name>
+  </compound>
+  <compound refid="_game_object_8cpp" kind="file"><name>GameObject.cpp</name>
+  </compound>
+  <compound refid="_game_object_8h" kind="file"><name>GameObject.h</name>
+  </compound>
+  <compound refid="_input_8h" kind="file"><name>Input.h</name>
+  </compound>
+  <compound refid="_obstacle_car_8cpp" kind="file"><name>ObstacleCar.cpp</name>
+  </compound>
+  <compound refid="_obstacle_car_8h" kind="file"><name>ObstacleCar.h</name>
+  </compound>
+  <compound refid="_obstacle_mng_8cpp" kind="file"><name>ObstacleMng.cpp</name>
+  </compound>
+  <compound refid="_obstacle_mng_8h" kind="file"><name>ObstacleMng.h</name>
+  </compound>
+  <compound refid="_s_m___controller_8cpp" kind="file"><name>SM_Controller.cpp</name>
+  </compound>
+  <compound refid="_s_m___controller_8h" kind="file"><name>SM_Controller.h</name>
+  </compound>
+  <compound refid="_source_8cpp" kind="file"><name>Source.cpp</name>
+    <member refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_text_8cpp" kind="file"><name>Text.cpp</name>
+  </compound>
+  <compound refid="_text_8h" kind="file"><name>Text.h</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:</name>
+  </compound>
+  <compound refid="dir_c377e08a38231b2f43ae4197ad4b3cb4" kind="dir"><name>D:/GCU_2ndY</name>
+  </compound>
+  <compound refid="dir_45845b3f7d3c2e9382b31c63b17f6d21" kind="dir"><name>D:/GCU_2ndY/Programming1/GP1_2ndPart</name>
+  </compound>
+  <compound refid="dir_3520d33c3130114e0bc657e093bd032d" kind="dir"><name>D:/GCU_2ndY/Programming1</name>
+  </compound>
+  <compound refid="dir_f189c50d34c091fff060fbd1418985aa" kind="dir"><name>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness</name>
+  </compound>
+  <compound refid="dir_d2cca922ccc6d14bf4b66d67f491e3e8" kind="dir"><name>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness</name>
+  </compound>
+</doxygenindex>

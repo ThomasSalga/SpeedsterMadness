@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_input" kind="class" prot="public">
+    <compoundname>Input</compoundname>
+    <includes refid="_input_8h" local="no">Input.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_input_1a359e935807893d306a9ab8714d9aac26" prot="public" static="no" mutable="no">
+        <type>const Uint8 *</type>
+        <definition>const Uint8* Input::keyboardState</definition>
+        <argsstring></argsstring>
+        <name>keyboardState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="27" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_mouse_state_descriptor" kindref="compound">MouseStateDescriptor</ref></type>
+        <definition>MouseStateDescriptor Input::mouseState</definition>
+        <argsstring></argsstring>
+        <name>mouseState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="28" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_input_1abae3f379d3f157cf42dc857309832dba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Input::Input</definition>
+        <argsstring>()</argsstring>
+        <name>Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="24" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_1af2db35ba67c8a8ccd23bef6a482fc291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Input::~Input</definition>
+        <argsstring>()</argsstring>
+        <name>~Input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="25" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>Input</label>
+        <link refid="class_input"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>mouseState</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>MouseStateDescriptor</label>
+        <link refid="struct_mouse_state_descriptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="22" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="21" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_input_1abae3f379d3f157cf42dc857309832dba" prot="public" virt="non-virtual"><scope>Input</scope><name>Input</name></member>
+      <member refid="class_input_1a359e935807893d306a9ab8714d9aac26" prot="public" virt="non-virtual"><scope>Input</scope><name>keyboardState</name></member>
+      <member refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" prot="public" virt="non-virtual"><scope>Input</scope><name>mouseState</name></member>
+      <member refid="class_input_1af2db35ba67c8a8ccd23bef6a482fc291" prot="public" virt="non-virtual"><scope>Input</scope><name>~Input</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

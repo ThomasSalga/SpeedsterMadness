@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_text_8cpp" kind="file">
+    <compoundname>Text.cpp</compoundname>
+    <includes refid="_text_8h" local="yes">Text.h</includes>
+    <incdepgraph>
+      <node id="481">
+        <label>Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="483">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.cpp</label>
+        <link refid="Text.cpp"/>
+        <childnode refid="481" relation="include">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>string</label>
+      </node>
+      <node id="488">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="482">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="491">
+        <label>vector</label>
+      </node>
+      <node id="492">
+        <label>iostream</label>
+      </node>
+      <node id="487">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="489">
+        <label>stdio.h</label>
+      </node>
+      <node id="485">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_text_8h" kindref="compound">Text.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_text_1ab3e26143fccc52699bcc5149cae852bc" refkind="member"><highlight class="normal"><ref refid="class_text_1ab3e26143fccc52699bcc5149cae852bc" kindref="member">Text::Text</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_text_1a2d49e5c280e205125b149f7777ae30c7" refkind="member"><highlight class="normal"><ref refid="class_text_1a2d49e5c280e205125b149f7777ae30c7" kindref="member">Text::~Text</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_text_1a859d95c2410ac57a59e0e6b4496082a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a859d95c2410ac57a59e0e6b4496082a2" kindref="member">Text::Start</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Text::Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_text_1a49fda9df00dc8355a727094dc37ced68" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Text::Update</ref>(std::string<sp/>newText,<sp/>SDL_Color<sp/>newColor)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1a8d2e39bee772f386cb79557fef0959ad" kindref="member">m_text</ref><sp/>=<sp/>newText;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1a6ebe4c18863e9e7af92f85c3fc83f6a4" kindref="member">m_color</ref><sp/>=<sp/>newColor;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" kindref="member">Draw</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" kindref="member">Text::Draw</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>rendering<sp/>space<sp/>and<sp/>render<sp/>to<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Rect<sp/>renderQuad<sp/>=<sp/>{<sp/><ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>.x,<sp/><ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>.y,<sp/><ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x,<sp/><ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>alpha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetTextureAlphaMod(<ref refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" kindref="member">m_texture</ref>,<sp/><ref refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" kindref="member">m_alpha</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Render<sp/>to<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderCopyEx(<ref refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" kindref="member">m_renderer</ref>,<sp/><ref refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" kindref="member">m_texture</ref>,<sp/>NULL,<sp/>&amp;renderQuad,<sp/><ref refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" kindref="member">m_rotation</ref>,<sp/>NULL,<sp/>SDL_FLIP_NONE);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" kindref="member">DrawTextColor</ref>(<ref refid="class_text_1a8d2e39bee772f386cb79557fef0959ad" kindref="member">m_text</ref>,<sp/><ref refid="class_text_1a6ebe4c18863e9e7af92f85c3fc83f6a4" kindref="member">m_color</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_text_1acd99b388d88151665247bda7256189a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1acd99b388d88151665247bda7256189a1" kindref="member">Text::OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref><sp/>*<sp/>collider)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_text_1a772bb4f5e415e505aa629d7aac97f1cb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a772bb4f5e415e505aa629d7aac97f1cb" kindref="member">Text::SetText</ref>(std::string<sp/>newText)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1a8d2e39bee772f386cb79557fef0959ad" kindref="member">m_text</ref><sp/>=<sp/>newText;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_text_1acdb9d84e614d24736359551406891a81" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1acdb9d84e614d24736359551406891a81" kindref="member">Text::SetColor</ref>(SDL_Color<sp/>newColor)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1a6ebe4c18863e9e7af92f85c3fc83f6a4" kindref="member">m_color</ref><sp/>=<sp/>newColor;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.cpp"/>
+  </compounddef>
+</doxygen>

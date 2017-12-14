@@ -2,7 +2,8 @@
 #define _GAME_H
 
 #include "GameObject.h"
-//#include "Timer.h"
+#include <iostream>
+#include <fstream>
 
 struct AudioClip
 {
