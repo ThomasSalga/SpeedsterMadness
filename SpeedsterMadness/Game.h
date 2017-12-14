@@ -29,6 +29,7 @@ public :
 	void ClearScene();
 	void AddSceneToGame();
 	void SetActiveScene(int sceneIndex);
+	Uint8 GetActiveScene();
 
 	//audio managment
 	void ClearSounds();
@@ -45,6 +46,7 @@ private:
 	int m_windowHeight;
 	int m_windowWidth;
 	bool m_isRunning = true;
+	Uint8 m_activeSceneIndex = 0;
 
 	//The window we'll be rendering to
 	SDL_Window* m_window = NULL;

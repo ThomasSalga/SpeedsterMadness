@@ -16,7 +16,7 @@ public:
 
 	virtual void Start() = 0;
 	virtual void Update(float deltaTime,Input input) = 0;
-	void Draw();
+	virtual void Draw();
 
 	void LoadTexture(std::string path);
 	void LoadFont(std::string path, int size);

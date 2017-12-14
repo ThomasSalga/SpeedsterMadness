@@ -23,11 +23,25 @@ void ButtonTexture::Update(float deltaTime, Input input)
 		m_alpha = 127; // set the sprite transparency at 50% 
 		if (input.mouseState.lPressed)
 		{
+			//sound managing through a dedicated class next time?
 			m_game->PlaySound("Button",0);
-			if (m_sceneIndex == 1)
+			if (m_game->GetActiveScene() == 0 )
 			{
-				m_game->SetActiveScene(m_sceneIndex);
+				m_game->StopSound("Intro");
+				if (m_sceneIndex == 1)
+					m_game->PlaySound("Sugar", 1);
 			}
+			if (m_game->GetActiveScene() == 1)
+			{
+				//m_game->StopSound("Sugar");
+			}
+			if (m_game->GetActiveScene() == 2 )
+			{
+				m_game->StopSound("GameOver");
+				if (m_sceneIndex == 1)
+					m_game->PlaySound("Sugar", 1);
+			}
+			m_game->SetActiveScene(m_sceneIndex);
 		}
 	}else m_alpha = 255; // set the sprite transparency at 100% 
 }

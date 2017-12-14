@@ -19,6 +19,16 @@ void SM_Controller::Start()
 
 void SM_Controller::Update(float deltaTime, Input input)
 {
+	//update score
+	m_time += deltaTime;
+	std::cout << std::to_string(m_time) << std::endl;
+	if (m_time > 1)
+	{
+		SetScore(m_score + 10);
+		std::cout << m_scoreText << std::endl;
+		m_time = 0;
+	}
+	//update Inputs
 	if (input.keyboardState[SDL_SCANCODE_RIGHT])
 	{
 		if (m_position.x < m_game->GetWindowSize().x /3 - m_dimensions.x + GetMovementArea().x / 2)
@@ -58,6 +68,33 @@ void SM_Controller::OnCollision(GameObject * collider)
 	if (collider->m_name.compare(0, 3, "car") == 0)
 	{
 		std::cout << m_name << " collided with " << collider->m_name << " GAME OVER" << std::endl;
+		//clear scene from obstacles for replay
+		std::string name;
+		m_game->PlaySound("Impact", 0);
+		for (int i = 0; i <= 99; i++)
+		{
+			name = "car";
+			name += std::to_string(i);
+			m_game->RemoveObject(name,1);
+		}
+		m_game->StopSound("Sugar");
+		m_game->PlaySound("GameOver", 1);
 		m_game->SetActiveScene(2);
 	}
+}
+
+void SM_Controller::SetScore(int score)
+{
+	m_score = score; 
+	m_scoreText->SetText(std::to_string(m_score));
+}
+
+int SM_Controller::GetScore()
+{
+	return m_score;
+}
+
+void SM_Controller::AssignTextScore(Text * text)
+{
+	m_scoreText = text;
 }

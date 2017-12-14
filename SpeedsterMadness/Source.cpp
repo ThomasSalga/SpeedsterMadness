@@ -6,32 +6,6 @@
 #include "SM_Controller.h"
 #include "ObstacleMng.h"
 
-/*
-void CreateObject(Game g, GameObject* obj, std::string name, std::vector<int> allIndexes)
-{
-	obj->SetName(name);
-	for(int sIndex : allIndexes)
-		g.AddObject(obj, sIndex);
-	//customize ButtonTexture object
-	//obj->LoadTexture("Assets/Images/ButtonTexture.png");
-	//obj->m_position = glm::vec2(g.GetWindowSize().x / 2 - obj->m_dimensions.x / 2, g.GetWindowSize().y / 2 - obj->m_dimensions.y / 2);
-}
-
-void CustomizeButton(Game g, GameObject* obj, std::string path, glm::vec2 pos)
-{
-	//customize button object
-	obj->LoadTexture(path);
-	obj->m_position = glm::vec2(g.GetWindowSize().x * pos[0] - obj->m_dimensions.x / 2, g.GetWindowSize().y * pos[1] - obj->m_dimensions.y / 2);
-}
-void CustomizeText(GameObject* obj, std::string path, int dimension, std::string text, SDL_Color color, glm::vec2 pos)
-{
-	//customize text object
-	obj->LoadFont(path, dimension);
-	obj->DrawTextColor(text, color);
-	obj->m_position = pos;
-}
-*/
-
 
 int main(int argc, char* args[])
 {
@@ -40,14 +14,8 @@ int main(int argc, char* args[])
 	{
 		//create scenes for our game
 		game.AddSceneToGame();//the intro scene			index 0
-		game.AddSceneToGame();//the menu scene			index 1
-		game.AddSceneToGame();//the game scene			index 2
-		//game.AddSceneToGame();//the end scene			index 3
-		//game.AddSceneToGame();//the score scene		index 4
-
-		/*=====================================================================================================================================================*/
-		/*================================================================    INTRO SCENE    ==================================================================*/
-		/*=====================================================================================================================================================*/
+		game.AddSceneToGame();//the game scene			index 1
+		game.AddSceneToGame();//the gameover scene			index 2
 		
 ////////// create BackGround  
 #pragma region BackGround
@@ -78,14 +46,14 @@ int main(int argc, char* args[])
 		game.AddObject(title, 0);
 		//customize ButtonTexture object
 		title->LoadFont("Assets/PressStart2P.ttf", 30);
-		title->DrawTextColor("RETROFUTURISTICARCADE", { 200,80,255 });
+		title->Update("RETROFUTURISTICARCADE", { 200,80,255 });
 		title->m_position = glm::vec2(glm::vec2(game.GetWindowSize().x / 2 - title->m_dimensions.x / 2, game.GetWindowSize().y / 6 - title->m_dimensions.y / 2));
 
 		title2->SetName("title2");
 		game.AddObject(title2, 0);
 		//customize ButtonTexture object
 		title2->LoadFont("Assets/PressStart2P.ttf", 30);
-		title2->DrawTextColor("SPEEDSTER MADNESS", { 20,30,255 });
+		title2->Update("SPEEDSTER MADNESS", { 20,30,255 });
 		title2->m_position = glm::vec2(glm::vec2(game.GetWindowSize().x / 2 - title2->m_dimensions.x / 2, game.GetWindowSize().y / 5 - title2->m_dimensions.y / 2));
 #pragma endregion
 ////////// create ButtonTexture object (background sprite for all the buttons)
@@ -103,7 +71,7 @@ int main(int argc, char* args[])
 		game.AddObject(btn_play_text,0);
 		//customize ButtonFont object
 		btn_play_text->LoadFont("Assets/PressStart2P.ttf", 12);
-		btn_play_text->DrawTextColor("PLAY", { 100,150,255 });
+		btn_play_text->Update("PLAY", { 100,150,255 });
 		btn_play_text->m_position = glm::vec2(game.GetWindowSize().x / 5 - btn_play_text->m_dimensions.x / 2, game.GetWindowSize().y * 4 / 5 - btn_play_text->m_dimensions.y / 2);
 #pragma endregion
 //GAMEOVER text
@@ -113,7 +81,7 @@ int main(int argc, char* args[])
 		game.AddObject(gameover_text, 2);
 		//customize ButtonFont object
 		gameover_text->LoadFont("Assets/PressStart2P.ttf", 40);
-		gameover_text->DrawTextColor("GAME OVER", { 200,50,255 });
+		gameover_text->Update("GAME OVER", { 200,50,255 });
 		gameover_text->m_position = glm::vec2(game.GetWindowSize().x / 2 - gameover_text->m_dimensions.x / 2, game.GetWindowSize().y / 6 - gameover_text->m_dimensions.y / 2);
 #pragma endregion
 //////////create ButtonFont objects (text on top of the button)
@@ -131,8 +99,33 @@ int main(int argc, char* args[])
 		game.AddObject(btn_replay_text, 2);
 		//customize ButtonFont object
 		btn_replay_text->LoadFont("Assets/PressStart2P.ttf", 12);
-		btn_replay_text->DrawTextColor("REPLAY", { 100,150,255 });
+		btn_replay_text->Update("REPLAY", { 100,150,255 });
 		btn_replay_text->m_position = glm::vec2(game.GetWindowSize().x / 5 - btn_replay_text->m_dimensions.x / 2, game.GetWindowSize().y * 4 / 5 - btn_replay_text->m_dimensions.y / 2);
+#pragma endregion
+//////////create Obstacles
+#pragma region Obstacles
+		ObstacleMng* cars = new ObstacleMng();
+		cars->SetName("car");
+		game.AddObject(cars, 1);
+#pragma endregion
+////////// create Score
+#pragma region Score
+		Text* score = new Text();
+		Text* scoreValue = new Text();
+
+		score->SetName("score");
+		game.AddObject(score, 1);
+		//customize ButtonTexture object
+		score->LoadFont("Assets/PressStart2P.ttf", 15);
+		score->Update("SCORE:", { 200,80,255 });
+		score->m_position = glm::vec2(glm::vec2((game.GetWindowSize().x * 3 / 4) - (score->m_dimensions.x / 2), (game.GetWindowSize().y / 6) - (score->m_dimensions.y / 2)));
+
+		scoreValue->SetName("scoreValue");
+		game.AddObject(scoreValue, 1);
+		//customize ButtonTexture object
+		scoreValue->LoadFont("Assets/PressStart2P.ttf", 15);
+		scoreValue->Update("0", { 100,80,255 });
+		scoreValue->m_position = glm::vec2(glm::vec2((game.GetWindowSize().x * 3 / 4) + (score->m_dimensions.x / 2), (game.GetWindowSize().y / 6) - (scoreValue->m_dimensions.y / 2)));
 #pragma endregion
 //////////create player object
 #pragma region Player
@@ -142,21 +135,18 @@ int main(int argc, char* args[])
 		//customize player object
 		player->LoadTexture("Assets/Images/SMPlayer1.png");
 		player->m_position = glm::vec2(game.GetWindowSize().x / 3 - player->m_dimensions.x / 2, game.GetWindowSize().y / 2 - player->m_dimensions.y / 2);
+		player->AssignTextScore(scoreValue);
 		//Load sounds for player
-#pragma endregion		
-//////////create Obstacles
-#pragma region Obstacles
-		ObstacleMng* cars = new ObstacleMng();
-		cars->SetName("car");
-		game.AddObject(cars, 1);
 #pragma endregion
 		
-		
-		
 		//Load all required audio here
-		game.LoadSound("Ambient", "Assets/Audio/beat.wav"); //check sound name and path, when working place in correct spot !!!
+		game.LoadSound("GameOver", "Assets/Audio/GameOver.mp3"); //check sound name and path, place in correct spot !!!
 		game.LoadSound("Button", "Assets/Audio/Button.mp3");
-		
+		game.LoadSound("Impact", "Assets/Audio/Impact.wav");
+		game.LoadSound("Intro", "Assets/Audio/Menu.wav");
+		game.LoadSound("Sugar", "Assets/Audio/Sugar.mp3");
+
+		game.PlaySound("Intro",1);
 
 		game.SetActiveScene(0);
 		//once you Run nobody is gonna stop you

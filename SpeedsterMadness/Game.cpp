@@ -104,7 +104,6 @@ void Game::Run()
 	//Event handler
 	SDL_Event e;
 
-
 	//While application is running
 	while (m_isRunning)
 	{
@@ -151,8 +150,6 @@ void Game::Run()
 					break;
 				}
 			}
-
-
 		}
 		const Uint8* tempInput = SDL_GetKeyboardState(NULL);
 		input.keyboardState = tempInput;
@@ -202,7 +199,13 @@ void Game::AddSceneToGame()
 void Game::SetActiveScene(int sceneIndex)
 {
 	m_activeScene = *m_scenes.at(sceneIndex); //dereference operator "*pointer"
+	m_activeSceneIndex = sceneIndex;
 	Start();
+}
+
+Uint8 Game::GetActiveScene()
+{
+	return m_activeSceneIndex;
 }
 
 void Game::ClearSounds()
@@ -248,7 +251,6 @@ void Game::StopSound(std::string name)
 			Mix_HaltChannel(clip->m_channel);
 		}
 	}
-
 }
 
 void Game::Quit()
@@ -302,21 +304,6 @@ void Game::Draw()
 	{
 		go->Draw();
 	}
-
-	/*
-	// From Bobby Law's Lab9
-	SDL_Rect tilePosXY;
-	tilePosXY = { 50, 50, 100, 100 };
-	// determine number of rows and columns for array
-	int numRows = 6;
-	int numCols = 4;
-	SDL_SetRenderDrawColor(m_renderer, 150, 150, 150, 255);
-	for (int col = 0; col < numCols; col++)
-	{
-		tilePosXY.x += 50;
-	}
-	SDL_SetRenderDrawColor(m_renderer, 0, 0, 0, 255);
-	*/
 
 	//Render our fonts
 	DrawText();
