@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_mouse_state_descriptor" kind="struct" prot="public">
+    <compoundname>MouseStateDescriptor</compoundname>
+    <includes refid="_input_8h" local="no">Input.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MouseStateDescriptor::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="16" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MouseStateDescriptor::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="16" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MouseStateDescriptor::lPressed</definition>
+        <argsstring></argsstring>
+        <name>lPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="17" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">ButtonTexture::Update</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">SM_Controller::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mouse_state_descriptor_1a7d31f55333e1576b76a5d612aa3518e0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MouseStateDescriptor::rPressed</definition>
+        <argsstring></argsstring>
+        <name>rPressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="18" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" compoundref="_game_8cpp" startline="100" endline="159">Game::Run</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" line="15" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Input.h" bodystart="14" bodyend="19"/>
+    <listofallmembers>
+      <member refid="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" prot="public" virt="non-virtual"><scope>MouseStateDescriptor</scope><name>lPressed</name></member>
+      <member refid="struct_mouse_state_descriptor_1a7d31f55333e1576b76a5d612aa3518e0" prot="public" virt="non-virtual"><scope>MouseStateDescriptor</scope><name>rPressed</name></member>
+      <member refid="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" prot="public" virt="non-virtual"><scope>MouseStateDescriptor</scope><name>x</name></member>
+      <member refid="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" prot="public" virt="non-virtual"><scope>MouseStateDescriptor</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

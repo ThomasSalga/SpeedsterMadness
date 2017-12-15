@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_m___controller" kind="class" prot="public">
+    <compoundname>SM_Controller</compoundname>
+    <basecompoundref refid="class_game_object" prot="public" virt="non-virtual">GameObject</basecompoundref>
+    <includes refid="_s_m___controller_8h" local="no">SM_Controller.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_m___controller_1a55583aa5bd7234677b701714fc8ab435" prot="private" static="no" mutable="no">
+        <type><ref refid="class_text" kindref="compound">Text</ref> *</type>
+        <definition>Text* SM_Controller::m_scoreText</definition>
+        <argsstring></argsstring>
+        <name>m_scoreText</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="31" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_s_m___controller_1ae3b672df74d13d10d2dd1ce71310bb4a" compoundref="_s_m___controller_8cpp" startline="139" endline="142">AssignTextScore</referencedby>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">OnCollision</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m___controller_1a82a399755add3bdfab97a9d3157f748d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SM_Controller::m_score</definition>
+        <argsstring></argsstring>
+        <name>m_score</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="32" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_s_m___controller_1af19bc8dbcae688ee820c5932d1232e25" compoundref="_s_m___controller_8cpp" startline="134" endline="137">GetScore</referencedby>
+        <referencedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" compoundref="_s_m___controller_8cpp" startline="14" endline="21">Start</referencedby>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m___controller_1a717d234fc8a7f1dcd09efc13e843a813" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SM_Controller::m_highScore</definition>
+        <argsstring></argsstring>
+        <name>m_highScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="33" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">OnCollision</referencedby>
+        <referencedby refid="class_s_m___controller_1a81c5929a048061ffbe456db8b8fced24" compoundref="_s_m___controller_8cpp" startline="92" endline="111">ReadFromFile</referencedby>
+        <referencedby refid="class_s_m___controller_1a577182bf223172d2aec381c375f40b79" compoundref="_s_m___controller_8cpp" startline="126" endline="132">SetHighScore</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m___controller_1a4dc4c4f30d35b5096d45a46b5f37fb7b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SM_Controller::m_movX</definition>
+        <argsstring></argsstring>
+        <name>m_movX</name>
+        <initializer>= 300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="34" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" compoundref="_s_m___controller_8h" startline="18" endline="18">GetMovementArea</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_m___controller_1a3e112ff43679d5f71e974262f2d46c2e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SM_Controller::m_time</definition>
+        <argsstring></argsstring>
+        <name>m_time</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="35" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_m___controller_1a3131fd81e10456491bea016039573be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SM_Controller::SM_Controller</definition>
+        <argsstring>()</argsstring>
+        <name>SM_Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="11" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1ab65437bf69181217eed02614217c84c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SM_Controller::~SM_Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~SM_Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="12" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SM_Controller::Start</definition>
+        <argsstring>() override</argsstring>
+        <name>Start</name>
+        <reimplements refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5">Start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="14" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="14" bodyend="21"/>
+        <references refid="class_game_1a5d10a78924d45454645a0b15bfde7624" compoundref="_game_8h" startline="25" endline="25">Game::GetWindowSize</references>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">GameObject::m_dimensions</references>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">GameObject::m_game</references>
+        <references refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" compoundref="_game_object_8h" startline="29">GameObject::m_position</references>
+        <references refid="class_s_m___controller_1a82a399755add3bdfab97a9d3157f748d" compoundref="_s_m___controller_8h" startline="32">m_score</references>
+        <references refid="class_s_m___controller_1a81c5929a048061ffbe456db8b8fced24" compoundref="_s_m___controller_8cpp" startline="92" endline="111">ReadFromFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SM_Controller::Update</definition>
+        <argsstring>(float deltaTime, Input input) override</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input" kindref="compound">Input</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="15" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="23" bodyend="68"/>
+        <references refid="class_game_object_1a917417da016e4775d1338d4606e3e899" compoundref="_game_object_8cpp" startline="33" endline="40">GameObject::CollisionPoint</references>
+        <references refid="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" compoundref="_s_m___controller_8h" startline="18" endline="18">GetMovementArea</references>
+        <references refid="class_game_1a5d10a78924d45454645a0b15bfde7624" compoundref="_game_8h" startline="25" endline="25">Game::GetWindowSize</references>
+        <references refid="class_input_1a359e935807893d306a9ab8714d9aac26" compoundref="_input_8h" startline="27">Input::keyboardState</references>
+        <references refid="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" compoundref="_input_8h" startline="17">MouseStateDescriptor::lPressed</references>
+        <references refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" compoundref="_game_object_8h" startline="30">GameObject::m_dimensions</references>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">GameObject::m_game</references>
+        <references refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" compoundref="_game_object_8h" startline="29">GameObject::m_position</references>
+        <references refid="class_s_m___controller_1a82a399755add3bdfab97a9d3157f748d" compoundref="_s_m___controller_8h" startline="32">m_score</references>
+        <references refid="class_s_m___controller_1a55583aa5bd7234677b701714fc8ab435" compoundref="_s_m___controller_8h" startline="31">m_scoreText</references>
+        <references refid="class_s_m___controller_1a3e112ff43679d5f71e974262f2d46c2e" compoundref="_s_m___controller_8h" startline="35">m_time</references>
+        <references refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" compoundref="_input_8h" startline="28">Input::mouseState</references>
+        <references refid="class_game_1a1827c75a4b4ab4a543bf99772a55337c" compoundref="_game_8cpp" startline="256" endline="259">Game::Quit</references>
+        <references refid="class_s_m___controller_1a577182bf223172d2aec381c375f40b79" compoundref="_s_m___controller_8cpp" startline="126" endline="132">SetHighScore</references>
+        <references refid="class_text_1a772bb4f5e415e505aa629d7aac97f1cb" compoundref="_text_8cpp" startline="48" endline="51">Text::SetText</references>
+        <references refid="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" compoundref="_input_8h" startline="16">MouseStateDescriptor::x</references>
+        <references refid="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" compoundref="_input_8h" startline="16">MouseStateDescriptor::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SM_Controller::OnCollision</definition>
+        <argsstring>(GameObject *collider) override</argsstring>
+        <name>OnCollision</name>
+        <reimplements refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7">OnCollision</reimplements>
+        <param>
+          <type><ref refid="class_game_object" kindref="compound">GameObject</ref> *</type>
+          <declname>collider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="17" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="70" bodyend="90"/>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">GameObject::m_game</references>
+        <references refid="class_s_m___controller_1a717d234fc8a7f1dcd09efc13e843a813" compoundref="_s_m___controller_8h" startline="33">m_highScore</references>
+        <references refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" compoundref="_game_object_8h" startline="28">GameObject::m_name</references>
+        <references refid="class_s_m___controller_1a55583aa5bd7234677b701714fc8ab435" compoundref="_s_m___controller_8h" startline="31">m_scoreText</references>
+        <references refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" compoundref="_game_8cpp" startline="231" endline="243">Game::PlaySound</references>
+        <references refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" compoundref="_game_8cpp" startline="168" endline="180">Game::RemoveObject</references>
+        <references refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">Game::SetActiveScene</references>
+        <references refid="class_text_1a772bb4f5e415e505aa629d7aac97f1cb" compoundref="_text_8cpp" startline="48" endline="51">Text::SetText</references>
+        <references refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" compoundref="_game_8cpp" startline="245" endline="254">Game::StopSound</references>
+        <references refid="class_s_m___controller_1acd14e179f00b999221c7b630ab306a51" compoundref="_s_m___controller_8cpp" startline="113" endline="124">WriteOnFile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 SM_Controller::GetMovementArea</definition>
+        <argsstring>()</argsstring>
+        <name>GetMovementArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="18" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="18" bodyend="18"/>
+        <references refid="class_game_1a5d10a78924d45454645a0b15bfde7624" compoundref="_game_8h" startline="25" endline="25">Game::GetWindowSize</references>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">GameObject::m_game</references>
+        <references refid="class_s_m___controller_1a4dc4c4f30d35b5096d45a46b5f37fb7b" compoundref="_s_m___controller_8h" startline="34">m_movX</references>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1a577182bf223172d2aec381c375f40b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SM_Controller::SetHighScore</definition>
+        <argsstring>(int score)</argsstring>
+        <name>SetHighScore</name>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="21" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="126" bodyend="132"/>
+        <references refid="class_s_m___controller_1a717d234fc8a7f1dcd09efc13e843a813" compoundref="_s_m___controller_8h" startline="33">m_highScore</references>
+        <referencedby refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" compoundref="_s_m___controller_8cpp" startline="23" endline="68">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1af19bc8dbcae688ee820c5932d1232e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SM_Controller::GetScore</definition>
+        <argsstring>()</argsstring>
+        <name>GetScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="22" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="134" bodyend="137"/>
+        <references refid="class_s_m___controller_1a82a399755add3bdfab97a9d3157f748d" compoundref="_s_m___controller_8h" startline="32">m_score</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1ae3b672df74d13d10d2dd1ce71310bb4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SM_Controller::AssignTextScore</definition>
+        <argsstring>(Text *text)</argsstring>
+        <name>AssignTextScore</name>
+        <param>
+          <type><ref refid="class_text" kindref="compound">Text</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="23" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="139" bodyend="142"/>
+        <references refid="class_s_m___controller_1a55583aa5bd7234677b701714fc8ab435" compoundref="_s_m___controller_8h" startline="31">m_scoreText</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1a81c5929a048061ffbe456db8b8fced24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SM_Controller::ReadFromFile</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFromFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="26" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="92" bodyend="111"/>
+        <references refid="class_s_m___controller_1a717d234fc8a7f1dcd09efc13e843a813" compoundref="_s_m___controller_8h" startline="33">m_highScore</references>
+        <referencedby refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" compoundref="_s_m___controller_8cpp" startline="14" endline="21">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_m___controller_1acd14e179f00b999221c7b630ab306a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SM_Controller::WriteOnFile</definition>
+        <argsstring>(int score)</argsstring>
+        <name>WriteOnFile</name>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="27" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp" bodystart="113" bodyend="124"/>
+        <referencedby refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" compoundref="_s_m___controller_8cpp" startline="70" endline="90">OnCollision</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="79">
+        <label>SM_Controller</label>
+        <link refid="class_s_m___controller"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="84">
+        <label>std::vector&lt; std::vector&lt; GameObject * &gt; * &gt;</label>
+        <childnode refid="85" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>std::vector&lt; GameObject * &gt;</label>
+        <childnode refid="82" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="89">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="90">
+        <label>Text</label>
+        <link refid="class_text"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>m_text</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Game</label>
+        <link refid="class_game"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>m_scenes</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="usage">
+          <edgelabel>m_audioClips</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>m_activeScene</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>SM_Controller</label>
+        <link refid="class_s_m___controller"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>m_scoreText</edgelabel>
+        </childnode>
+      </node>
+      <node id="82">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+        <childnode refid="83" relation="usage">
+          <edgelabel>m_game</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="88" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>std::vector&lt; AudioClip * &gt;</label>
+        <childnode refid="87" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>std::string</label>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" line="9" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h" bodystart="7" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_s_m___controller_1ae3b672df74d13d10d2dd1ce71310bb4a" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>AssignTextScore</name></member>
+      <member refid="class_game_object_1a917417da016e4775d1338d4606e3e899" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>CollisionPoint</name></member>
+      <member refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" prot="public" virt="virtual"><scope>SM_Controller</scope><name>Draw</name></member>
+      <member refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>DrawTextColor</name></member>
+      <member refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>GameObject</name></member>
+      <member refid="class_s_m___controller_1a3755664a83a3c0aa2e2fa2b9a2785409" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>GetMovementArea</name></member>
+      <member refid="class_s_m___controller_1af19bc8dbcae688ee820c5932d1232e25" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>GetScore</name></member>
+      <member refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>LoadFont</name></member>
+      <member refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" prot="protected" virt="non-virtual"><scope>SM_Controller</scope><name>LoadFontInTexture</name></member>
+      <member refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>LoadTexture</name></member>
+      <member refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" prot="protected" virt="non-virtual"><scope>SM_Controller</scope><name>LoadTextureFromFile</name></member>
+      <member refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>m_alpha</name></member>
+      <member refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>m_dimensions</name></member>
+      <member refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" prot="protected" virt="non-virtual"><scope>SM_Controller</scope><name>m_font</name></member>
+      <member refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" prot="protected" virt="non-virtual"><scope>SM_Controller</scope><name>m_game</name></member>
+      <member refid="class_s_m___controller_1a717d234fc8a7f1dcd09efc13e843a813" prot="private" virt="non-virtual"><scope>SM_Controller</scope><name>m_highScore</name></member>
+      <member refid="class_s_m___controller_1a4dc4c4f30d35b5096d45a46b5f37fb7b" prot="private" virt="non-virtual"><scope>SM_Controller</scope><name>m_movX</name></member>
+      <member refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>m_name</name></member>
+      <member refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>m_position</name></member>
+      <member refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" prot="protected" virt="non-virtual"><scope>SM_Controller</scope><name>m_renderer</name></member>
+      <member refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>m_rotation</name></member>
+      <member refid="class_s_m___controller_1a82a399755add3bdfab97a9d3157f748d" prot="private" virt="non-virtual"><scope>SM_Controller</scope><name>m_score</name></member>
+      <member refid="class_s_m___controller_1a55583aa5bd7234677b701714fc8ab435" prot="private" virt="non-virtual"><scope>SM_Controller</scope><name>m_scoreText</name></member>
+      <member refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" prot="protected" virt="non-virtual"><scope>SM_Controller</scope><name>m_texture</name></member>
+      <member refid="class_s_m___controller_1a3e112ff43679d5f71e974262f2d46c2e" prot="private" virt="non-virtual"><scope>SM_Controller</scope><name>m_time</name></member>
+      <member refid="class_s_m___controller_1af165a31a81b4fc8c412d55785eae0473" prot="public" virt="virtual"><scope>SM_Controller</scope><name>OnCollision</name></member>
+      <member refid="class_s_m___controller_1a81c5929a048061ffbe456db8b8fced24" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>ReadFromFile</name></member>
+      <member refid="class_s_m___controller_1a577182bf223172d2aec381c375f40b79" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>SetHighScore</name></member>
+      <member refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>SetName</name></member>
+      <member refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>Setup</name></member>
+      <member refid="class_s_m___controller_1a3131fd81e10456491bea016039573be6" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>SM_Controller</name></member>
+      <member refid="class_s_m___controller_1a15e480c90bc0fd8de43180c89d6c6d15" prot="public" virt="virtual"><scope>SM_Controller</scope><name>Start</name></member>
+      <member refid="class_s_m___controller_1aa3dfbf90be2b01e78348c25fdf0178ae" prot="public" virt="virtual"><scope>SM_Controller</scope><name>Update</name></member>
+      <member refid="class_s_m___controller_1acd14e179f00b999221c7b630ab306a51" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>WriteOnFile</name></member>
+      <member refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>~GameObject</name></member>
+      <member refid="class_s_m___controller_1ab65437bf69181217eed02614217c84c1" prot="public" virt="non-virtual"><scope>SM_Controller</scope><name>~SM_Controller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

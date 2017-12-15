@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_text_8h" kind="file">
+    <compoundname>Text.h</compoundname>
+    <includes refid="_game_object_8h" local="yes">GameObject.h</includes>
+    <includedby refid="_s_m___controller_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h</includedby>
+    <includedby refid="_source_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</includedby>
+    <includedby refid="_text_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.cpp</includedby>
+    <incdepgraph>
+      <node id="494">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.h</label>
+        <link refid="Text.h"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="496">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>string</label>
+      </node>
+      <node id="501">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="495">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="496" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="504">
+        <label>vector</label>
+      </node>
+      <node id="505">
+        <label>iostream</label>
+      </node>
+      <node id="500">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="502">
+        <label>stdio.h</label>
+      </node>
+      <node id="498">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="506">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.h</label>
+        <link refid="Text.h"/>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+      <node id="507">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h</label>
+        <link refid="_s_m___controller_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="508">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp</label>
+        <link refid="_s_m___controller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_text" prot="public">Text</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_object_8h" kindref="compound">GameObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_text" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_text" kindref="compound">Text</ref><sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_game_object" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1ab3e26143fccc52699bcc5149cae852bc" kindref="member">Text</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_text_1a2d49e5c280e205125b149f7777ae30c7" kindref="member">~Text</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a859d95c2410ac57a59e0e6b4496082a2" kindref="member">Start</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input)</highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a13449aa1a12673f6211c3b1a94d2f9e0" kindref="member">Update</ref>(std::string<sp/>newText,<sp/>SDL_Color<sp/>newColor);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1af4bb084ff0f66ad827ef6b006f9b0ebd" kindref="member">Draw</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1acd99b388d88151665247bda7256189a1" kindref="member">OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref>*<sp/>collider)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1a772bb4f5e415e505aa629d7aac97f1cb" kindref="member">SetText</ref>(std::string<sp/>newText);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_text_1acdb9d84e614d24736359551406891a81" kindref="member">SetColor</ref>(SDL_Color<sp/>newColor);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_text_1a8d2e39bee772f386cb79557fef0959ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_text_1a8d2e39bee772f386cb79557fef0959ad" kindref="member">m_text</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21" refid="class_text_1a6ebe4c18863e9e7af92f85c3fc83f6a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Color<sp/><ref refid="class_text_1a6ebe4c18863e9e7af92f85c3fc83f6a4" kindref="member">m_color</ref><sp/>=<sp/>{<sp/>0,0,0<sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.h"/>
+  </compounddef>
+</doxygen>

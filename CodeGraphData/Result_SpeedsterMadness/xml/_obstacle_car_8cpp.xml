@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_obstacle_car_8cpp" kind="file">
+    <compoundname>ObstacleCar.cpp</compoundname>
+    <includes refid="_obstacle_car_8h" local="yes">ObstacleCar.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">random</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/istream</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/vector</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/xmemory</includes>
+    <incdepgraph>
+      <node id="366">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/xmemory</label>
+      </node>
+      <node id="353">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="350">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>string</label>
+      </node>
+      <node id="346">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.cpp</label>
+        <link refid="ObstacleCar.cpp"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="363">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/istream</label>
+      </node>
+      <node id="360">
+        <label>fstream</label>
+      </node>
+      <node id="362">
+        <label>random</label>
+      </node>
+      <node id="349">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="358">
+        <label>vector</label>
+      </node>
+      <node id="361">
+        <label>time.h</label>
+      </node>
+      <node id="364">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/vector</label>
+      </node>
+      <node id="359">
+        <label>iostream</label>
+      </node>
+      <node id="354">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="347">
+        <label>ObstacleCar.h</label>
+        <link refid="_obstacle_car_8h"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>algorithm</label>
+      </node>
+      <node id="356">
+        <label>stdio.h</label>
+      </node>
+      <node id="352">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_obstacle_car_8h" kindref="compound">ObstacleCar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_obstacle_car_1a423737d510d102e8dde6ab2945afc8a9" refkind="member"><highlight class="normal"><ref refid="class_obstacle_car_1a423737d510d102e8dde6ab2945afc8a9" kindref="member">ObstacleCar::ObstacleCar</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_obstacle_car_1afa30a6a1263346fd1e2be8a93ee13d1e" refkind="member"><highlight class="normal"><ref refid="class_obstacle_car_1afa30a6a1263346fd1e2be8a93ee13d1e" kindref="member">ObstacleCar::~ObstacleCar</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" kindref="member">ObstacleCar::Start</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>v<sp/>=<sp/>{<sp/>1,<sp/>2,<sp/>3,<sp/>4};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//https://stackoverflow.com/questions/14441680/is-it-modern-c-to-use-srand-to-set-random-seed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::default_random_engine<sp/>gen(SDL_GetTicks());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shuffle(v.begin(),<sp/>v.end(),<sp/>gen);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//srand(SDL_GetTicks());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>x<sp/>=<sp/>1<sp/>+<sp/>(rand()<sp/>%<sp/>4);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::to_string(v[1])<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>.y<sp/>=<sp/>0<sp/>-<sp/><ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>*<sp/>2;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>.x<sp/>=<sp/>((<ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().x<sp/>/<sp/>3)<sp/>-<sp/>(<ref refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" kindref="member">GetMovementArea</ref>().x<sp/>*<sp/>3<sp/>/<sp/>4)<sp/>+<sp/><ref refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" kindref="member">GetMovementArea</ref>().x<sp/>/<sp/>8<sp/>-<sp/>(<ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.x<sp/>/<sp/>2))<sp/>+<sp/>(<ref refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" kindref="member">GetMovementArea</ref>().x/4<sp/>*<sp/>(v[1]));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" kindref="member">ObstacleCar::Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>.y<sp/>+=<sp/><ref refid="class_obstacle_car_1a4754276084d106d5ecd685abf34cb9b1" kindref="member">m_velocity</ref><sp/>*<sp/>deltaTime;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>.y<sp/>&gt;=<sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" kindref="member">RemoveObject</ref>(<ref refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" kindref="member">m_name</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" kindref="member">m_name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>has<sp/>been<sp/>removed&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_obstacle_car_1aa6fce90a67b2952af2670c471df74159" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1aa6fce90a67b2952af2670c471df74159" kindref="member">ObstacleCar::OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref><sp/>*<sp/>collider)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.cpp"/>
+  </compounddef>
+</doxygen>

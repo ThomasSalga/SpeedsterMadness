@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_game_object_8h" kind="file">
+    <compoundname>GameObject.h</compoundname>
+    <includes refid="_input_8h" local="yes">Input.h</includes>
+    <includedby refid="_back_ground_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h</includedby>
+    <includedby refid="_button_texture_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h</includedby>
+    <includedby refid="_game_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h</includedby>
+    <includedby refid="_game_object_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp</includedby>
+    <includedby refid="_text_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.h</includedby>
+    <incdepgraph>
+      <node id="294">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="291">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>string</label>
+      </node>
+      <node id="296">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="290">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h</label>
+        <link refid="GameObject.h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="299">
+        <label>vector</label>
+      </node>
+      <node id="300">
+        <label>iostream</label>
+      </node>
+      <node id="295">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="297">
+        <label>stdio.h</label>
+      </node>
+      <node id="293">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="316">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.h</label>
+        <link refid="_text_8h"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.h</label>
+        <link refid="_back_ground_8h"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp</label>
+        <link refid="_obstacle_mng_8cpp"/>
+      </node>
+      <node id="303">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/BackGround.cpp</label>
+        <link refid="_back_ground_8cpp"/>
+      </node>
+      <node id="317">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Text.cpp</label>
+        <link refid="_text_8cpp"/>
+      </node>
+      <node id="315">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h</label>
+        <link refid="_s_m___controller_8h"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.cpp</label>
+        <link refid="_obstacle_car_8cpp"/>
+      </node>
+      <node id="312">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h</label>
+        <link refid="_obstacle_mng_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp</label>
+        <link refid="_game_object_8cpp"/>
+      </node>
+      <node id="301">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h</label>
+        <link refid="GameObject.h"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="314">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp</label>
+        <link refid="_s_m___controller_8cpp"/>
+      </node>
+      <node id="310">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.h</label>
+        <link refid="_obstacle_car_8h"/>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="307">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h</label>
+        <link refid="_button_texture_8h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp</label>
+        <link refid="_button_texture_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_game_object" prot="public">GameObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_GO_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_GO_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game" kindref="compound">Game</ref>;<sp/></highlight><highlight class="comment">//forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_input_8h" kindref="compound">Input.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_game_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game_object" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" kindref="member">GameObject</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" kindref="member">~GameObject</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" kindref="member">Setup</ref>(SDL_Renderer*<sp/>renderer,<sp/><ref refid="class_game" kindref="compound">Game</ref>*<sp/>game);</highlight></codeline>
+<codeline lineno="15" refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" kindref="member">SetName</ref>(std::string<sp/>name)<sp/>{<sp/><ref refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" kindref="member">m_name</ref><sp/>=<sp/>name;<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5" kindref="member">Start</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<ref refid="class_input" kindref="compound">Input</ref><sp/>input)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" kindref="member">Draw</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" kindref="member">LoadTexture</ref>(std::string<sp/>path);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" kindref="member">LoadFont</ref>(std::string<sp/>path,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" kindref="member">DrawTextColor</ref>(std::string<sp/>text,<sp/>SDL_Color<sp/>color);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a917417da016e4775d1338d4606e3e899" kindref="member">CollisionPoint</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7" kindref="member">OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" kindref="member">m_name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29" refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec2<sp/><ref refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" kindref="member">m_position</ref>{<sp/>0,0<sp/>};</highlight></codeline>
+<codeline lineno="30" refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec2<sp/><ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>{<sp/>0,0<sp/>};</highlight></codeline>
+<codeline lineno="31" refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" kindref="member">m_rotation</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32" refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" kindref="member">m_alpha</ref><sp/>=<sp/>255;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Texture*<sp/><ref refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" kindref="member">LoadTextureFromFile</ref>(std::string<sp/>path);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Texture*<sp/><ref refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" kindref="member">LoadFontInTexture</ref>(std::string<sp/>text,<sp/>SDL_Color<sp/>color);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Texture*<sp/><ref refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" kindref="member">m_texture</ref>=NULL;</highlight></codeline>
+<codeline lineno="40" refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Renderer*<sp/><ref refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" kindref="member">m_renderer</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Globally<sp/>used<sp/>font</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TTF_Font<sp/>*<ref refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" kindref="member">m_font</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="43" refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game" kindref="compound">Game</ref>*<sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.h"/>
+  </compounddef>
+</doxygen>

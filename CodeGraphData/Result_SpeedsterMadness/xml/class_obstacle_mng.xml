@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_obstacle_mng" kind="class" prot="public">
+    <compoundname>ObstacleMng</compoundname>
+    <basecompoundref refid="class_game_object" prot="public" virt="non-virtual">GameObject</basecompoundref>
+    <includes refid="_obstacle_mng_8h" local="no">ObstacleMng.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_obstacle_mng_1ad7349a90620d5834d91df4af1bd93449" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_obstacle_car" kindref="compound">ObstacleCar</ref> * &gt;</type>
+        <definition>std::vector&lt;ObstacleCar*&gt; ObstacleMng::myObstacles</definition>
+        <argsstring></argsstring>
+        <name>myObstacles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="19" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_obstacle_mng_1ac172471984875abdf7d83df3ee010b92" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ObstacleMng::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="24" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" compoundref="_obstacle_mng_8cpp" startline="18" endline="36">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_obstacle_mng_1a9b79b0187c0d93bfe8d083893b50ac76" prot="private" static="no" mutable="no">
+        <type>Uint8</type>
+        <definition>Uint8 ObstacleMng::obstacles</definition>
+        <argsstring></argsstring>
+        <name>obstacles</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="25" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" compoundref="_obstacle_mng_8cpp" startline="42" endline="56">AddObstacle</referencedby>
+        <referencedby refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" compoundref="_obstacle_mng_8cpp" startline="18" endline="36">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_obstacle_mng_1afa60bc1cbf255405d38c793cf710dbfb" prot="private" static="no" mutable="no">
+        <type>Uint8</type>
+        <definition>Uint8 ObstacleMng::pathway</definition>
+        <argsstring></argsstring>
+        <name>pathway</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="26" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" compoundref="_obstacle_mng_8cpp" startline="18" endline="36">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_obstacle_mng_1a36e59fa672aa0c15f7bc1c70b48bc5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ObstacleMng::ObstacleMng</definition>
+        <argsstring>()</argsstring>
+        <name>ObstacleMng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="10" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacle_mng_1adb3e9a6ba882d7c66581a9711d669b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ObstacleMng::~ObstacleMng</definition>
+        <argsstring>()</argsstring>
+        <name>~ObstacleMng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="11" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacle_mng_1a29db0a12c89a838511e44c3cabe86672" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ObstacleMng::Start</definition>
+        <argsstring>() override</argsstring>
+        <name>Start</name>
+        <reimplements refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5">Start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="13" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ObstacleMng::Update</definition>
+        <argsstring>(float deltaTime, Input input) override</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input" kindref="compound">Input</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="14" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="18" bodyend="36"/>
+        <references refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" compoundref="_obstacle_mng_8cpp" startline="42" endline="56">AddObstacle</references>
+        <references refid="class_obstacle_mng_1a9b79b0187c0d93bfe8d083893b50ac76" compoundref="_obstacle_mng_8h" startline="25">obstacles</references>
+        <references refid="class_obstacle_mng_1afa60bc1cbf255405d38c793cf710dbfb" compoundref="_obstacle_mng_8h" startline="26">pathway</references>
+        <references refid="class_obstacle_mng_1ac172471984875abdf7d83df3ee010b92" compoundref="_obstacle_mng_8h" startline="24">time</references>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacle_mng_1ae671051b5b292a587dfc04a71bb36c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ObstacleMng::OnCollision</definition>
+        <argsstring>(GameObject *collider) override</argsstring>
+        <name>OnCollision</name>
+        <reimplements refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7">OnCollision</reimplements>
+        <param>
+          <type><ref refid="class_game_object" kindref="compound">GameObject</ref> *</type>
+          <declname>collider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="16" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObstacleMng::AddObstacle</definition>
+        <argsstring>()</argsstring>
+        <name>AddObstacle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="21" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="42" bodyend="56"/>
+        <references refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" compoundref="_game_8cpp" startline="161" endline="166">Game::AddObject</references>
+        <references refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" compoundref="_game_object_8cpp" startline="42" endline="45">GameObject::LoadTexture</references>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">GameObject::m_game</references>
+        <references refid="class_obstacle_mng_1a9b79b0187c0d93bfe8d083893b50ac76" compoundref="_obstacle_mng_8h" startline="25">obstacles</references>
+        <references refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" compoundref="_game_object_8h" startline="15" endline="15">GameObject::SetName</references>
+        <references refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" compoundref="_obstacle_car_8cpp" startline="15" endline="28">ObstacleCar::Start</references>
+        <referencedby refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" compoundref="_obstacle_mng_8cpp" startline="18" endline="36">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_obstacle_mng_1adccb014991f61aec9e3e33c0f4b58750" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObstacleMng::EraseAll</definition>
+        <argsstring>()</argsstring>
+        <name>EraseAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="22" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="66">
+        <label>ObstacleMng</label>
+        <link refid="class_obstacle_mng"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="71">
+        <label>std::vector&lt; std::vector&lt; GameObject * &gt; * &gt;</label>
+        <childnode refid="72" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="72">
+        <label>std::vector&lt; GameObject * &gt;</label>
+        <childnode refid="69" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="78">
+        <label>ObstacleCar</label>
+        <link refid="class_obstacle_car"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>ObstacleMng</label>
+        <link refid="class_obstacle_mng"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="usage">
+          <edgelabel>myObstacles</edgelabel>
+        </childnode>
+      </node>
+      <node id="77">
+        <label>std::vector&lt; ObstacleCar * &gt;</label>
+        <childnode refid="78" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="76">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="70">
+        <label>Game</label>
+        <link refid="class_game"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>m_scenes</edgelabel>
+        </childnode>
+        <childnode refid="73" relation="usage">
+          <edgelabel>m_audioClips</edgelabel>
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>m_activeScene</edgelabel>
+        </childnode>
+      </node>
+      <node id="69">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+        <childnode refid="70" relation="usage">
+          <edgelabel>m_game</edgelabel>
+        </childnode>
+        <childnode refid="75" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="74">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="75" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="73">
+        <label>std::vector&lt; AudioClip * &gt;</label>
+        <childnode refid="74" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="75">
+        <label>std::string</label>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" line="8" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_obstacle_mng_1a73273504012cb694f4ee2ce16945b282" prot="private" virt="non-virtual"><scope>ObstacleMng</scope><name>AddObstacle</name></member>
+      <member refid="class_game_object_1a917417da016e4775d1338d4606e3e899" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>CollisionPoint</name></member>
+      <member refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" prot="public" virt="virtual"><scope>ObstacleMng</scope><name>Draw</name></member>
+      <member refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>DrawTextColor</name></member>
+      <member refid="class_obstacle_mng_1adccb014991f61aec9e3e33c0f4b58750" prot="private" virt="non-virtual"><scope>ObstacleMng</scope><name>EraseAll</name></member>
+      <member refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>GameObject</name></member>
+      <member refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>LoadFont</name></member>
+      <member refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" prot="protected" virt="non-virtual"><scope>ObstacleMng</scope><name>LoadFontInTexture</name></member>
+      <member refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>LoadTexture</name></member>
+      <member refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" prot="protected" virt="non-virtual"><scope>ObstacleMng</scope><name>LoadTextureFromFile</name></member>
+      <member refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>m_alpha</name></member>
+      <member refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>m_dimensions</name></member>
+      <member refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" prot="protected" virt="non-virtual"><scope>ObstacleMng</scope><name>m_font</name></member>
+      <member refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" prot="protected" virt="non-virtual"><scope>ObstacleMng</scope><name>m_game</name></member>
+      <member refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>m_name</name></member>
+      <member refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>m_position</name></member>
+      <member refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" prot="protected" virt="non-virtual"><scope>ObstacleMng</scope><name>m_renderer</name></member>
+      <member refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>m_rotation</name></member>
+      <member refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" prot="protected" virt="non-virtual"><scope>ObstacleMng</scope><name>m_texture</name></member>
+      <member refid="class_obstacle_mng_1ad7349a90620d5834d91df4af1bd93449" prot="private" virt="non-virtual"><scope>ObstacleMng</scope><name>myObstacles</name></member>
+      <member refid="class_obstacle_mng_1a36e59fa672aa0c15f7bc1c70b48bc5ce" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>ObstacleMng</name></member>
+      <member refid="class_obstacle_mng_1a9b79b0187c0d93bfe8d083893b50ac76" prot="private" virt="non-virtual"><scope>ObstacleMng</scope><name>obstacles</name></member>
+      <member refid="class_obstacle_mng_1ae671051b5b292a587dfc04a71bb36c1b" prot="public" virt="virtual"><scope>ObstacleMng</scope><name>OnCollision</name></member>
+      <member refid="class_obstacle_mng_1afa60bc1cbf255405d38c793cf710dbfb" prot="private" virt="non-virtual"><scope>ObstacleMng</scope><name>pathway</name></member>
+      <member refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>SetName</name></member>
+      <member refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>Setup</name></member>
+      <member refid="class_obstacle_mng_1a29db0a12c89a838511e44c3cabe86672" prot="public" virt="virtual"><scope>ObstacleMng</scope><name>Start</name></member>
+      <member refid="class_obstacle_mng_1ac172471984875abdf7d83df3ee010b92" prot="private" virt="non-virtual"><scope>ObstacleMng</scope><name>time</name></member>
+      <member refid="class_obstacle_mng_1a70a0418e60dce655d1881d51a78203cc" prot="public" virt="virtual"><scope>ObstacleMng</scope><name>Update</name></member>
+      <member refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>~GameObject</name></member>
+      <member refid="class_obstacle_mng_1adb3e9a6ba882d7c66581a9711d669b55" prot="public" virt="non-virtual"><scope>ObstacleMng</scope><name>~ObstacleMng</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

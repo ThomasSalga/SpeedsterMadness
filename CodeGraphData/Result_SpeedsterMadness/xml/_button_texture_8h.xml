@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_button_texture_8h" kind="file">
+    <compoundname>ButtonTexture.h</compoundname>
+    <includes refid="_game_object_8h" local="yes">GameObject.h</includes>
+    <includedby refid="_button_texture_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp</includedby>
+    <includedby refid="_source_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</includedby>
+    <incdepgraph>
+      <node id="226">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="223">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>string</label>
+      </node>
+      <node id="228">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="222">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="231">
+        <label>vector</label>
+      </node>
+      <node id="232">
+        <label>iostream</label>
+      </node>
+      <node id="227">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="221">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h</label>
+        <link refid="ButtonTexture.h"/>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>stdio.h</label>
+      </node>
+      <node id="225">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="235">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="233">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h</label>
+        <link refid="ButtonTexture.h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp</label>
+        <link refid="_button_texture_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_button_texture" prot="public">ButtonTexture</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_BTN_TEXTURE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BTN_TEXTURE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_object_8h" kindref="compound">GameObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_button_texture" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_button_texture" kindref="compound">ButtonTexture</ref><sp/>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_game_object" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_button_texture_1ae730713c3023af54674c7ab5fe7aedab" kindref="member">ButtonTexture</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_button_texture_1ad4360b962671babb6c975cb17f161885" kindref="member">~ButtonTexture</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4" kindref="member">Start</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568" kindref="member">OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref>*<sp/>collider);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" kindref="member">AssignSceneLinkIndex</ref>(Uint8<sp/>sceneIndex);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" kindref="member">m_sceneIndex</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!_BTN_TEXTURE_H</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h"/>
+  </compounddef>
+</doxygen>

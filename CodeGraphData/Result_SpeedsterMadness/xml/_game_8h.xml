@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_game_8h" kind="file">
+    <compoundname>Game.h</compoundname>
+    <includes refid="_game_object_8h" local="yes">GameObject.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="_button_texture_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp</includedby>
+    <includedby refid="_game_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp</includedby>
+    <includedby refid="_game_object_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp</includedby>
+    <includedby refid="_obstacle_car_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.h</includedby>
+    <includedby refid="_obstacle_mng_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h</includedby>
+    <includedby refid="_s_m___controller_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h</includedby>
+    <includedby refid="_s_m___controller_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp</includedby>
+    <includedby refid="_source_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</includedby>
+    <incdepgraph>
+      <node id="256">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="253">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>string</label>
+      </node>
+      <node id="258">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="263">
+        <label>fstream</label>
+      </node>
+      <node id="252">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="261">
+        <label>vector</label>
+      </node>
+      <node id="262">
+        <label>iostream</label>
+      </node>
+      <node id="257">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="251">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>stdio.h</label>
+      </node>
+      <node id="255">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="271">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp</label>
+        <link refid="_obstacle_mng_8cpp"/>
+      </node>
+      <node id="274">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.h</label>
+        <link refid="_s_m___controller_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.cpp</label>
+        <link refid="_obstacle_car_8cpp"/>
+      </node>
+      <node id="270">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h</label>
+        <link refid="_obstacle_mng_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/GameObject.cpp</label>
+        <link refid="_game_object_8cpp"/>
+      </node>
+      <node id="272">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="273">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp</label>
+        <link refid="_s_m___controller_8cpp"/>
+      </node>
+      <node id="268">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.h</label>
+        <link refid="_obstacle_car_8h"/>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="264">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp</label>
+        <link refid="_button_texture_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_audio_clip" prot="public">AudioClip</innerclass>
+    <innerclass refid="class_game" prot="public">Game</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_GAME_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_GAME_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_object_8h" kindref="compound">GameObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="struct_audio_clip" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_audio_clip" kindref="compound">AudioClip</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="struct_audio_clip_1a089093dcab6a372eb7ae66548862a8a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="struct_audio_clip_1a089093dcab6a372eb7ae66548862a8a8" kindref="member">m_name</ref>;</highlight></codeline>
+<codeline lineno="11" refid="struct_audio_clip_1a3279dc6f7a601b3aa9ece33406127558" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Mix_Chunk*<sp/><ref refid="struct_audio_clip_1a3279dc6f7a601b3aa9ece33406127558" kindref="member">m_clip</ref>;</highlight></codeline>
+<codeline lineno="12" refid="struct_audio_clip_1a8fbd5e738bae36624b344382789c1ddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_audio_clip_1a8fbd5e738bae36624b344382789c1ddb" kindref="member">m_channel</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game" kindref="compound">Game</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_1ad59df6562a58a614fda24622d3715b65" kindref="member">Game</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_1ad59df6562a58a614fda24622d3715b65" kindref="member">Game</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" kindref="member">~Game</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_game_1a8ded578027b24871870babe65a939567" kindref="member">InitSystems</ref>();<sp/></highlight><highlight class="comment">//init<sp/>window<sp/>and<sp/>SDL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a96341ca5b54d90adc3ecb3bf0bcd2312" kindref="member">Run</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_game_1a5d10a78924d45454645a0b15bfde7624" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec2<sp/><ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glm::vec2(<ref refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" kindref="member">m_windowWidth</ref>,<sp/><ref refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" kindref="member">m_windowHeight</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//scene<sp/>managment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a722d3b03daad1401b8be2af4b2b4611a" kindref="member">AddObject</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sceneIndex);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a9eaf6f7e46c239c9d967d2ba6c0940d0" kindref="member">RemoveObject</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sceneIndex);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1af2765ff96ef807dddb2a06bbe9057b18" kindref="member">ClearScene</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a1d0dc0680b6851ef2b09dba6fce322fa" kindref="member">AddSceneToGame</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" kindref="member">SetActiveScene</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sceneIndex);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_game_1aee36fbc84dea2886feb4cab048c86314" kindref="member">GetActiveScene</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//audio<sp/>managment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a20968d3e7684406c218c78f1636bcc9b" kindref="member">ClearSounds</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a0a1e7a1d2c8446ffdc6760b838eccd70" kindref="member">LoadSound</ref>(std::string<sp/>name,<sp/>std::string<sp/>path);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" kindref="member">PlaySound</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loop);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" kindref="member">StopSound</ref>(std::string<sp/>name);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a1827c75a4b4ab4a543bf99772a55337c" kindref="member">Quit</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="class_game_1a5a76bc267138492ad42f269f0f92669b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;GameObject*&gt;<sp/><ref refid="class_game_1a5a76bc267138492ad42f269f0f92669b" kindref="member">m_activeScene</ref>;</highlight></codeline>
+<codeline lineno="45" refid="class_game_1a112021c937e24b38503f5325fcb63af2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;GameObject*&gt;*&gt;<sp/><ref refid="class_game_1a112021c937e24b38503f5325fcb63af2" kindref="member">m_scenes</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_game_1adf6a05d2cb1f75197792d116447dc351" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;AudioClip*&gt;<sp/><ref refid="class_game_1adf6a05d2cb1f75197792d116447dc351" kindref="member">m_audioClips</ref>;</highlight></codeline>
+<codeline lineno="47" refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_game_1a4c2b6295cffcd73e98cba0ea316d9e92" kindref="member">m_windowHeight</ref>;</highlight></codeline>
+<codeline lineno="48" refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_game_1ac379ce6b1ac74de3fbec35283e724172" kindref="member">m_windowWidth</ref>;</highlight></codeline>
+<codeline lineno="49" refid="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_game_1aa4ee40abfc0ac4eddfdcecd6b473c295" kindref="member">m_isRunning</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="class_game_1a56e10102cb5ba809d8b31de68af56a7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_game_1a56e10102cb5ba809d8b31de68af56a7e" kindref="member">m_activeSceneIndex</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>window<sp/>we&apos;ll<sp/>be<sp/>rendering<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_game_1a6e0d70674956416e0294b6b749779e92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Window*<sp/><ref refid="class_game_1a6e0d70674956416e0294b6b749779e92" kindref="member">m_window</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>window<sp/>renderer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Renderer*<sp/><ref refid="class_game_1a52ea7db927b65ea842227705fc1fc0c2" kindref="member">m_renderer</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1adb05b20574551a26f8cf1dc664782790" kindref="member">Start</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1a8f9bb984d06df0b54a45e80c476af023" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>delta,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>in);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1aad2c20e2c5529244095c50c238911e30" kindref="member">Draw</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_game_1aa479cf13c7537f901423498c7dcce328" kindref="member">DrawText</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_game_1a30f59f9fb0fc1e28feccaa6a317e0c2e" kindref="member">m_deltaTime</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Game.h"/>
+  </compounddef>
+</doxygen>

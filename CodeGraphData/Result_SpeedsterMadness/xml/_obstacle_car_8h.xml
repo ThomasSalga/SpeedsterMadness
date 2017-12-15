@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_obstacle_car_8h" kind="file">
+    <compoundname>ObstacleCar.h</compoundname>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <includedby refid="_obstacle_car_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.cpp</includedby>
+    <includedby refid="_obstacle_mng_8h" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h</includedby>
+    <includedby refid="_s_m___controller_8cpp" local="yes">D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp</includedby>
+    <incdepgraph>
+      <node id="374">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="371">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>string</label>
+      </node>
+      <node id="376">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="381">
+        <label>fstream</label>
+      </node>
+      <node id="370">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="371" relation="include">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="379">
+        <label>vector</label>
+      </node>
+      <node id="380">
+        <label>iostream</label>
+      </node>
+      <node id="375">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="368">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.h</label>
+        <link refid="ObstacleCar.h"/>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>stdio.h</label>
+      </node>
+      <node id="373">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="385">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.cpp</label>
+        <link refid="_obstacle_mng_8cpp"/>
+      </node>
+      <node id="383">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.cpp</label>
+        <link refid="_obstacle_car_8cpp"/>
+      </node>
+      <node id="384">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleMng.h</label>
+        <link refid="_obstacle_mng_8h"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="387">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/SM_Controller.cpp</label>
+        <link refid="_s_m___controller_8cpp"/>
+      </node>
+      <node id="382">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.h</label>
+        <link refid="ObstacleCar.h"/>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_obstacle_car" prot="public">ObstacleCar</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_OBSTACLECAR_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_OBSTACLECAR_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_obstacle_car" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_obstacle_car" kindref="compound">ObstacleCar</ref><sp/>:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_game_object" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_obstacle_car_1a423737d510d102e8dde6ab2945afc8a9" kindref="member">ObstacleCar</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_obstacle_car_1afa30a6a1263346fd1e2be8a93ee13d1e" kindref="member">~ObstacleCar</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_obstacle_car_1a4754276084d106d5ecd685abf34cb9b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Uint8<sp/><ref refid="class_obstacle_car_1a4754276084d106d5ecd685abf34cb9b1" kindref="member">m_velocity</ref><sp/>=<sp/>150;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1a4b8fd086aa8b572b219068f286a9873d" kindref="member">Start</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1a8946d9d8d7373d764991152d3d4c5be1" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1aa6fce90a67b2952af2670c471df74159" kindref="member">OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref>*<sp/>collider)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec2<sp/><ref refid="class_obstacle_car_1a2cfbb05381365e5c1b8fdb3cbcbe3676" kindref="member">GetMovementArea</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glm::vec2(<ref refid="class_obstacle_car_1a2f7d377ec04d415fe6990cc780b8bec8" kindref="member">m_movX</ref>,<sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1a5d10a78924d45454645a0b15bfde7624" kindref="member">GetWindowSize</ref>().y<sp/>+<sp/><ref refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" kindref="member">m_dimensions</ref>.y<sp/>*<sp/>2);<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_obstacle_car_1a2f7d377ec04d415fe6990cc780b8bec8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_obstacle_car_1a2f7d377ec04d415fe6990cc780b8bec8" kindref="member">m_movX</ref><sp/>=<sp/>300;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ObstacleCar.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_button_texture_8cpp" kind="file">
+    <compoundname>ButtonTexture.cpp</compoundname>
+    <includes refid="_button_texture_8h" local="yes">ButtonTexture.h</includes>
+    <includes refid="_game_8h" local="yes">Game.h</includes>
+    <includes local="no">C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/istream</includes>
+    <incdepgraph>
+      <node id="210">
+        <label>SDL\SDL_mixer.h</label>
+      </node>
+      <node id="207">
+        <label>Input.h</label>
+        <link refid="_input_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>string</label>
+      </node>
+      <node id="212">
+        <label>glm\glm.hpp</label>
+      </node>
+      <node id="219">
+        <label>C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include/istream</label>
+      </node>
+      <node id="218">
+        <label>fstream</label>
+      </node>
+      <node id="206">
+        <label>GameObject.h</label>
+        <link refid="_game_object_8h"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>SDL\SDL.h</label>
+      </node>
+      <node id="215">
+        <label>vector</label>
+      </node>
+      <node id="216">
+        <label>iostream</label>
+      </node>
+      <node id="211">
+        <label>SDL\SDL_ttf.h</label>
+      </node>
+      <node id="217">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>ButtonTexture.h</label>
+        <link refid="_button_texture_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp</label>
+        <link refid="ButtonTexture.cpp"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>stdio.h</label>
+      </node>
+      <node id="209">
+        <label>SDL\SDL_image.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_button_texture_8h" kindref="compound">ButtonTexture.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_game_8h" kindref="compound">Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_button_texture_1ae730713c3023af54674c7ab5fe7aedab" refkind="member"><highlight class="normal"><ref refid="class_button_texture_1ae730713c3023af54674c7ab5fe7aedab" kindref="member">ButtonTexture::ButtonTexture</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_button_texture_1ad4360b962671babb6c975cb17f161885" refkind="member"><highlight class="normal"><ref refid="class_button_texture_1ad4360b962671babb6c975cb17f161885" kindref="member">ButtonTexture::~ButtonTexture</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4" kindref="member">ButtonTexture::Start</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" kindref="member">ButtonTexture::Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime,<sp/><ref refid="class_input" kindref="compound">Input</ref><sp/>input)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_game_object_1a917417da016e4775d1338d4606e3e899" kindref="member">CollisionPoint</ref>(input.<ref refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" kindref="member">mouseState</ref>.<ref refid="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" kindref="member">x</ref>,<sp/>input.<ref refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" kindref="member">mouseState</ref>.<ref refid="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" kindref="member">y</ref>))<sp/></highlight><highlight class="comment">//<sp/>controlls<sp/>if<sp/>mouse<sp/>coordinates<sp/>are<sp/>inside<sp/>the<sp/>button<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" kindref="member">m_alpha</ref><sp/>=<sp/>127;<sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>sprite<sp/>transparency<sp/>at<sp/>50%<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input.<ref refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" kindref="member">mouseState</ref>.<ref refid="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" kindref="member">lPressed</ref>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sound<sp/>managing<sp/>through<sp/>a<sp/>dedicated<sp/>class<sp/>next<sp/>time?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" kindref="member">PlaySound</ref>(</highlight><highlight class="stringliteral">&quot;Button&quot;</highlight><highlight class="normal">,0);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1aee36fbc84dea2886feb4cab048c86314" kindref="member">GetActiveScene</ref>()<sp/>==<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" kindref="member">StopSound</ref>(</highlight><highlight class="stringliteral">&quot;Intro&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" kindref="member">m_sceneIndex</ref><sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" kindref="member">PlaySound</ref>(</highlight><highlight class="stringliteral">&quot;Sugar&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1aee36fbc84dea2886feb4cab048c86314" kindref="member">GetActiveScene</ref>()<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//m_game-&gt;StopSound(&quot;Sugar&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1aee36fbc84dea2886feb4cab048c86314" kindref="member">GetActiveScene</ref>()<sp/>==<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" kindref="member">StopSound</ref>(</highlight><highlight class="stringliteral">&quot;GameOver&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" kindref="member">m_sceneIndex</ref><sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" kindref="member">PlaySound</ref>(</highlight><highlight class="stringliteral">&quot;Sugar&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" kindref="member">m_game</ref>-&gt;<ref refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" kindref="member">SetActiveScene</ref>(<ref refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" kindref="member">m_sceneIndex</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" kindref="member">m_alpha</ref><sp/>=<sp/>255;<sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>sprite<sp/>transparency<sp/>at<sp/>100%<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568" kindref="member">ButtonTexture::OnCollision</ref>(<ref refid="class_game_object" kindref="compound">GameObject</ref><sp/>*<sp/>collider)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" kindref="member">ButtonTexture::AssignSceneLinkIndex</ref>(Uint8<sp/>sceneIndex)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" kindref="member">m_sceneIndex</ref><sp/>=<sp/>sceneIndex;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp"/>
+  </compounddef>
+</doxygen>

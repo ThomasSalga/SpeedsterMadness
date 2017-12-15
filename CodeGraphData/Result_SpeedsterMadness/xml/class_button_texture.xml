@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_button_texture" kind="class" prot="public">
+    <compoundname>ButtonTexture</compoundname>
+    <basecompoundref refid="class_game_object" prot="public" virt="non-virtual">GameObject</basecompoundref>
+    <includes refid="_button_texture_8h" local="no">ButtonTexture.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" prot="private" static="no" mutable="no">
+        <type>Uint8</type>
+        <definition>Uint8 ButtonTexture::m_sceneIndex</definition>
+        <argsstring></argsstring>
+        <name>m_sceneIndex</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="20" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" compoundref="_button_texture_8cpp" startline="53" endline="56">AssignSceneLinkIndex</referencedby>
+        <referencedby refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" compoundref="_button_texture_8cpp" startline="18" endline="47">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_button_texture_1ae730713c3023af54674c7ab5fe7aedab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ButtonTexture::ButtonTexture</definition>
+        <argsstring>()</argsstring>
+        <name>ButtonTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="9" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_button_texture_1ad4360b962671babb6c975cb17f161885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ButtonTexture::~ButtonTexture</definition>
+        <argsstring>()</argsstring>
+        <name>~ButtonTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="10" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ButtonTexture::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <reimplements refid="class_game_object_1a0cfa683eafa44f254a4485903fd896f5">Start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="12" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ButtonTexture::Update</definition>
+        <argsstring>(float deltaTime, Input input)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_game_object_1aff65ac4ec3516a932a65038f3ce3d7dc">Update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_input" kindref="compound">Input</ref></type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="13" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp" bodystart="18" bodyend="47"/>
+        <references refid="class_game_object_1a917417da016e4775d1338d4606e3e899" compoundref="_game_object_8cpp" startline="33" endline="40">GameObject::CollisionPoint</references>
+        <references refid="class_game_1aee36fbc84dea2886feb4cab048c86314" compoundref="_game_8cpp" startline="206" endline="209">Game::GetActiveScene</references>
+        <references refid="struct_mouse_state_descriptor_1a60365be43c5d60dd2e379f9803150195" compoundref="_input_8h" startline="17">MouseStateDescriptor::lPressed</references>
+        <references refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" compoundref="_game_object_8h" startline="32">GameObject::m_alpha</references>
+        <references refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" compoundref="_game_object_8h" startline="43">GameObject::m_game</references>
+        <references refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" compoundref="_button_texture_8h" startline="20">m_sceneIndex</references>
+        <references refid="class_input_1a5ae166f97e8a99d72b91d04a4dc485fb" compoundref="_input_8h" startline="28">Input::mouseState</references>
+        <references refid="class_game_1ae062fe63e5f958e4b85b9fa9b3f57cd9" compoundref="_game_8cpp" startline="231" endline="243">Game::PlaySound</references>
+        <references refid="class_game_1a4ba7978d93fc4e512efe08a95ee6d96e" compoundref="_game_8cpp" startline="199" endline="204">Game::SetActiveScene</references>
+        <references refid="class_game_1aa948dd58619ddeadcf803315c6f2a236" compoundref="_game_8cpp" startline="245" endline="254">Game::StopSound</references>
+        <references refid="struct_mouse_state_descriptor_1a3a85dfe02c95e74ef5791356fb0ea127" compoundref="_input_8h" startline="16">MouseStateDescriptor::x</references>
+        <references refid="struct_mouse_state_descriptor_1a1094cbfe120913ca1cb21d1baff02ae5" compoundref="_input_8h" startline="16">MouseStateDescriptor::y</references>
+      </memberdef>
+      <memberdef kind="function" id="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ButtonTexture::OnCollision</definition>
+        <argsstring>(GameObject *collider)</argsstring>
+        <name>OnCollision</name>
+        <reimplements refid="class_game_object_1a7561030c3419dfcd4fce8198b93463c7">OnCollision</reimplements>
+        <param>
+          <type><ref refid="class_game_object" kindref="compound">GameObject</ref> *</type>
+          <declname>collider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="15" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ButtonTexture::AssignSceneLinkIndex</definition>
+        <argsstring>(Uint8 sceneIndex)</argsstring>
+        <name>AssignSceneLinkIndex</name>
+        <param>
+          <type>Uint8</type>
+          <declname>sceneIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="17" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.cpp" bodystart="53" bodyend="56"/>
+        <references refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" compoundref="_button_texture_8h" startline="20">m_sceneIndex</references>
+        <referencedby refid="_source_8cpp_1a700a0caa5b70a06d1064e576f9f3cf65" compoundref="_source_8cpp" startline="10" endline="157">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>ButtonTexture</label>
+        <link refid="class_button_texture"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>std::vector&lt; std::vector&lt; GameObject * &gt; * &gt;</label>
+        <childnode refid="21" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>std::vector&lt; GameObject * &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ButtonTexture</label>
+        <link refid="class_button_texture"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="19">
+        <label>Game</label>
+        <link refid="class_game"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_scenes</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_audioClips</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_activeScene</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GameObject</label>
+        <link refid="class_game_object"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_game</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>AudioClip</label>
+        <link refid="struct_audio_clip"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>std::vector&lt; AudioClip * &gt;</label>
+        <childnode refid="23" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>std::string</label>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" line="7" column="1" bodyfile="D:/GCU_2ndY/Programming1/GP1_2ndPart/SpeedsterMadness/SpeedsterMadness/ButtonTexture.h" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_button_texture_1a94b213dfcf39e9d0b2155dfef37e713f" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>AssignSceneLinkIndex</name></member>
+      <member refid="class_button_texture_1ae730713c3023af54674c7ab5fe7aedab" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>ButtonTexture</name></member>
+      <member refid="class_game_object_1a917417da016e4775d1338d4606e3e899" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>CollisionPoint</name></member>
+      <member refid="class_game_object_1ad3ac1deac50048cf7a1a19eb0e61ad26" prot="public" virt="virtual"><scope>ButtonTexture</scope><name>Draw</name></member>
+      <member refid="class_game_object_1a58887d2b813b0a9a87ec13f67aa3c003" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>DrawTextColor</name></member>
+      <member refid="class_game_object_1a0348e3ee2e83d56eafca7a3547f432c4" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>GameObject</name></member>
+      <member refid="class_game_object_1a663d43ebc37979b51372d34a95509f65" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>LoadFont</name></member>
+      <member refid="class_game_object_1a7172241e9fbe2ac91029e2e856116c0d" prot="protected" virt="non-virtual"><scope>ButtonTexture</scope><name>LoadFontInTexture</name></member>
+      <member refid="class_game_object_1a8f4c5a0add250797e6ba4910c35f81b1" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>LoadTexture</name></member>
+      <member refid="class_game_object_1a3c0cd1960511177588dbb89c08c1c319" prot="protected" virt="non-virtual"><scope>ButtonTexture</scope><name>LoadTextureFromFile</name></member>
+      <member refid="class_game_object_1aed25b6c79752f7b39857d86ffd01a1d2" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>m_alpha</name></member>
+      <member refid="class_game_object_1ad4a29553d11fff56d1a3190988538641" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>m_dimensions</name></member>
+      <member refid="class_game_object_1ab71046da7600179f070714a5959f0f8a" prot="protected" virt="non-virtual"><scope>ButtonTexture</scope><name>m_font</name></member>
+      <member refid="class_game_object_1aff68c499e409ceca1cae1c43cc1c1b69" prot="protected" virt="non-virtual"><scope>ButtonTexture</scope><name>m_game</name></member>
+      <member refid="class_game_object_1a6de57342e9d37c35b3aa918dc5cc883a" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>m_name</name></member>
+      <member refid="class_game_object_1a3a51bb666616f3685c00a2ac567f2bc0" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>m_position</name></member>
+      <member refid="class_game_object_1a2be93417ea72201ce5edc093167b2f68" prot="protected" virt="non-virtual"><scope>ButtonTexture</scope><name>m_renderer</name></member>
+      <member refid="class_game_object_1a85d303e65cfe655f9127649e04fd9850" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>m_rotation</name></member>
+      <member refid="class_button_texture_1a6f176a0ac479960c65bcf86edbda1864" prot="private" virt="non-virtual"><scope>ButtonTexture</scope><name>m_sceneIndex</name></member>
+      <member refid="class_game_object_1a695534ebaa4c9e35d60aa4cc9068dfe8" prot="protected" virt="non-virtual"><scope>ButtonTexture</scope><name>m_texture</name></member>
+      <member refid="class_button_texture_1a1e4c0390d9043e3bad970052dbf89568" prot="public" virt="virtual"><scope>ButtonTexture</scope><name>OnCollision</name></member>
+      <member refid="class_game_object_1a5cbd59eb3fd5c0a0600e1879d60236a4" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>SetName</name></member>
+      <member refid="class_game_object_1a13af8d33fb7f272d6f0cc1389b4e3602" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>Setup</name></member>
+      <member refid="class_button_texture_1a3c0f19a355de3529baa96a568123dbf4" prot="public" virt="virtual"><scope>ButtonTexture</scope><name>Start</name></member>
+      <member refid="class_button_texture_1aa2743fb7dae22c43483e6def3329b759" prot="public" virt="virtual"><scope>ButtonTexture</scope><name>Update</name></member>
+      <member refid="class_button_texture_1ad4360b962671babb6c975cb17f161885" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>~ButtonTexture</name></member>
+      <member refid="class_game_object_1ab82dfdb656f9051c0587e6593b2dda97" prot="public" virt="non-virtual"><scope>ButtonTexture</scope><name>~GameObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
