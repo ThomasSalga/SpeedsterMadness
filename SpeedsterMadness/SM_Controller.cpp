@@ -14,7 +14,7 @@ SM_Controller::~SM_Controller()
 void SM_Controller::Start()
 {
 	m_position.x = (m_game->GetWindowSize().x / 3) - (m_dimensions.x / 2);
-	m_position.y = (m_game->GetWindowSize().y *2 / 3) - (m_dimensions.y / 2);
+	m_position.y = (m_game->GetWindowSize().y * 2 / 3) - (m_dimensions.y / 2);
 
 	ReadFromFile();
 	m_score = 0;
@@ -33,22 +33,22 @@ void SM_Controller::Update(float deltaTime, Input input)
 		m_time = 0;
 	}
 	//update Inputs
-	if (input.keyboardState[SDL_SCANCODE_RIGHT])
+	if (input.keyboardState[SDL_SCANCODE_RIGHT] || input.keyboardState[SDL_SCANCODE_D])
 	{
 		if (m_position.x < m_game->GetWindowSize().x /3 - m_dimensions.x + GetMovementArea().x / 2)
 			m_position.x += 200 * deltaTime;
 	}
-	if (input.keyboardState[SDL_SCANCODE_LEFT])
+	if (input.keyboardState[SDL_SCANCODE_LEFT] || input.keyboardState[SDL_SCANCODE_A])
 	{
 		if (m_position.x > m_game->GetWindowSize().x / 3 - GetMovementArea().x /2)
 			m_position.x -= 200 * deltaTime;
 	}
-	if (input.keyboardState[SDL_SCANCODE_UP])
+	if (input.keyboardState[SDL_SCANCODE_UP]|| input.keyboardState[SDL_SCANCODE_W])
 	{
 		if (m_position.y > 0 )
 		m_position.y -= 100 * deltaTime;
 	}
-	if (input.keyboardState[SDL_SCANCODE_DOWN])
+	if (input.keyboardState[SDL_SCANCODE_DOWN] || input.keyboardState[SDL_SCANCODE_S])
 	{
 		if (m_position.y < GetMovementArea().y - m_dimensions.y)
 		m_position.y += 200 * deltaTime;
@@ -98,6 +98,7 @@ void SM_Controller::ReadFromFile()
 		if (getline(myfile, line));
 		{
 			m_highScore = std::stoi(line);
+			m_highscoreText->SetText(std::to_string(m_highScore));
 		}
 		myfile.close();
 	}
@@ -128,6 +129,7 @@ void SM_Controller::SetHighScore(int score)
 	if (score > m_highScore)
 	{
 		m_highScore = score;
+		m_highscoreText->SetText(std::to_string(m_highScore));
 	}
 }
 
@@ -139,4 +141,9 @@ int SM_Controller::GetScore()
 void SM_Controller::AssignTextScore(Text * text)
 {
 	m_scoreText = text;
+}
+
+void SM_Controller::AssignTextHighScore(Text * text)
+{
+	m_highscoreText = text;
 }

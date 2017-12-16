@@ -20,8 +20,6 @@ void ObstacleCar::Start()
 	std::shuffle(v.begin(), v.end(), gen);
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
-	//srand(SDL_GetTicks());
-	//int x = 1 + (rand() % 4);
 	std::cout << std::to_string(v[1]) << std::endl;
 	m_position.y = 0 - m_dimensions.y * 2;
 	m_position.x = ((m_game->GetWindowSize().x / 3) - (GetMovementArea().x * 3 / 4) + GetMovementArea().x / 8 - (m_dimensions.x / 2)) + (GetMovementArea().x/4 * (v[1]));

@@ -19,12 +19,13 @@ private:
 	std::vector<ObstacleCar*> myObstacles;
 	
 	void AddObstacle();
-	void EraseAll();
+	//void EraseAll();
 
-	float time = 0;
-	Uint8 obstacles = 0;
-	Uint8 pathway = 0;
-
+	SDL_Texture* m_carTexture = nullptr;
+	ObstacleCar* m_car = nullptr;
+	float m_time = 0;
+	Uint8 m_obstacles = 0;
+	Uint8 m_pathway = 0;
 };
 
 #endif

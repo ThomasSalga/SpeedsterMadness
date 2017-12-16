@@ -30,18 +30,22 @@ void ButtonTexture::Update(float deltaTime, Input input)
 				m_game->StopSound("Intro");
 				if (m_sceneIndex == 1)
 					m_game->PlaySound("Sugar", 1);
-			}
-			if (m_game->GetActiveScene() == 1)
+			} 
+			else if (m_game->GetActiveScene() == 1)
 			{
 				//m_game->StopSound("Sugar");
 			}
-			if (m_game->GetActiveScene() == 2 )
+			else if (m_game->GetActiveScene() == 2 )
 			{
 				m_game->StopSound("GameOver");
 				if (m_sceneIndex == 1)
 					m_game->PlaySound("Sugar", 1);
 			}
 			m_game->SetActiveScene(m_sceneIndex);
+			//if (m_game->GetActiveScene() == 3)
+			//{
+			//	m_game->Quit();
+			//}
 		}
 	}else m_alpha = 255; // set the sprite transparency at 100% 
 }

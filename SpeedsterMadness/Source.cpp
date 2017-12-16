@@ -15,13 +15,22 @@ int main(int argc, char* args[])
 		//create scenes for our game
 		game.AddSceneToGame();//the intro scene			index 0
 		game.AddSceneToGame();//the game scene			index 1
-		game.AddSceneToGame();//the gameover scene			index 2
+		game.AddSceneToGame();//the gameover scene		index 2
+		//game.AddSceneToGame();//the quit scene			index 3
 		
+////////// create BackGround  
+#pragma region BackGroundIntro
+		BackGround* bgi = new BackGround();
+		bgi->SetName("backGroundIntro");
+		game.AddObject(bgi, 0);
+		//customize background object
+		bgi->LoadTexture("Assets/Images/BackGroundIntro.jpg");
+		bgi->m_position = glm::vec2(game.GetWindowSize().x / 2 - bgi->m_dimensions.x / 2, game.GetWindowSize().y / 2 - bgi->m_dimensions.y / 2);
+#pragma endregion
 ////////// create BackGround  
 #pragma region BackGround
 		BackGround* bg = new BackGround();
 		bg->SetName("backGround");
-		game.AddObject(bg, 0);
 		game.AddObject(bg, 1);
 		game.AddObject(bg, 2);
 		//customize background object
@@ -56,7 +65,7 @@ int main(int argc, char* args[])
 		title2->Update("SPEEDSTER MADNESS", { 20,30,255 });
 		title2->m_position = glm::vec2(glm::vec2(game.GetWindowSize().x / 2 - title2->m_dimensions.x / 2, game.GetWindowSize().y / 5 - title2->m_dimensions.y / 2));
 #pragma endregion
-////////// create ButtonTexture object (background sprite for all the buttons)
+////////// create Play button object (background sprite for all the buttons)
 #pragma region Play button
 		ButtonTexture* play_sprite = new ButtonTexture();
 		play_sprite->SetName("playBtn");
@@ -74,6 +83,26 @@ int main(int argc, char* args[])
 		btn_play_text->Update("PLAY", { 100,150,255 });
 		btn_play_text->m_position = glm::vec2(game.GetWindowSize().x / 5 - btn_play_text->m_dimensions.x / 2, game.GetWindowSize().y * 4 / 5 - btn_play_text->m_dimensions.y / 2);
 #pragma endregion
+////////// create Quit button object (background sprite for all the buttons)
+#pragma region Quit button
+//		ButtonTexture* quit_sprite = new ButtonTexture();
+//		quit_sprite->SetName("quit_sprite");
+//		game.AddObject(quit_sprite, 0);
+//		game.AddObject(quit_sprite, 2);
+//		//customize ButtonTexture object
+//		quit_sprite->AssignSceneLinkIndex(3);
+//		quit_sprite->LoadTexture("Assets/Images/ButtonSprite.png");
+//		quit_sprite->m_position = glm::vec2(game.GetWindowSize().x *4/ 5 - quit_sprite->m_dimensions.x / 2, game.GetWindowSize().y * 4 / 5 - quit_sprite->m_dimensions.y / 2);
+//		//////////create ButtonFont objects (text on top of the button)
+//		Text* btn_quit_text = new Text();
+//		btn_quit_text->SetName("btn_quit_text");
+//		game.AddObject(btn_quit_text, 0);
+//		game.AddObject(btn_quit_text, 2);
+//		//customize ButtonFont object
+//		btn_quit_text->LoadFont("Assets/PressStart2P.ttf", 12);
+//		btn_quit_text->Update("QUIT", { 100,150,255 });
+//		btn_quit_text->m_position = glm::vec2(game.GetWindowSize().x *4/ 5 - btn_quit_text->m_dimensions.x / 2, game.GetWindowSize().y * 4 / 5 - btn_quit_text->m_dimensions.y / 2);
+#pragma endregion
 //GAMEOVER text
 #pragma region GAMEOVE_text
 		Text* gameover_text = new Text();
@@ -84,7 +113,7 @@ int main(int argc, char* args[])
 		gameover_text->Update("GAME OVER", { 200,50,255 });
 		gameover_text->m_position = glm::vec2(game.GetWindowSize().x / 2 - gameover_text->m_dimensions.x / 2, game.GetWindowSize().y / 6 - gameover_text->m_dimensions.y / 2);
 #pragma endregion
-//////////create ButtonFont objects (text on top of the button)
+//////////create Replay button objects (text on top of the button)
 #pragma region Replay button
 		ButtonTexture* replay_sprite = new ButtonTexture();
 		replay_sprite->SetName("replayBtn");
@@ -127,6 +156,25 @@ int main(int argc, char* args[])
 		scoreValue->Update("0", { 100,80,255 });
 		scoreValue->m_position = glm::vec2(glm::vec2((game.GetWindowSize().x * 3 / 4) + (score->m_dimensions.x / 2), (game.GetWindowSize().y / 6) - (scoreValue->m_dimensions.y / 2)));
 #pragma endregion
+//////////create high score text
+#pragma region HighScore
+		Text* highscore = new Text();
+		Text* highscoreValue = new Text();
+
+		highscore->SetName("highscore");
+		game.AddObject(highscore, 1);
+		//customize ButtonTexture object
+		highscore->LoadFont("Assets/PressStart2P.ttf", 15);
+		highscore->Update("HIGH SCORE:", { 200,80,255 });
+		highscore->m_position = glm::vec2(glm::vec2((game.GetWindowSize().x * 3 / 4) - (highscore->m_dimensions.x / 2), (game.GetWindowSize().y * 2 / 6) - (highscore->m_dimensions.y / 2)));
+
+		highscoreValue->SetName("highscoreValue");
+		game.AddObject(highscoreValue, 1);
+		//customize ButtonTexture object
+		highscoreValue->LoadFont("Assets/PressStart2P.ttf", 15);
+		highscoreValue->Update("0", { 100,80,255 });
+		highscoreValue->m_position = glm::vec2(glm::vec2((game.GetWindowSize().x * 3 / 4) + (highscore->m_dimensions.x / 2), (game.GetWindowSize().y * 2 / 6) - (highscoreValue->m_dimensions.y / 2)));
+#pragma endregion
 //////////create player object
 #pragma region Player
 		SM_Controller* player = new SM_Controller();
@@ -136,6 +184,7 @@ int main(int argc, char* args[])
 		player->LoadTexture("Assets/Images/SMPlayer1.png");
 		player->m_position = glm::vec2(game.GetWindowSize().x / 3 - player->m_dimensions.x / 2, game.GetWindowSize().y / 2 - player->m_dimensions.y / 2);
 		player->AssignTextScore(scoreValue);
+		player->AssignTextHighScore(highscoreValue);
 		//Load sounds for player
 #pragma endregion
 		
@@ -151,7 +200,7 @@ int main(int argc, char* args[])
 		game.SetActiveScene(0);
 		//once you Run nobody is gonna stop you
 		game.Run(); // don't add anything after this line
-		game.~Game(); //does game destructor be called when the main scope ends??
+		//game.~Game(); //does game destructor be called when the main scope ends??
 	}
 	return 0;
 }

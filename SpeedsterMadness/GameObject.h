@@ -30,13 +30,13 @@ public:
 	glm::vec2 m_dimensions{ 0,0 };
 	double m_rotation = 0;
 	Uint8 m_alpha = 255;
+	SDL_Texture* m_texture= nullptr;
 
 
 protected:
 	SDL_Texture* LoadTextureFromFile(std::string path);
 	SDL_Texture* LoadFontInTexture(std::string text, SDL_Color color);
 
-	SDL_Texture* m_texture=NULL;
 	SDL_Renderer* m_renderer;
 	//Globally used font
 	TTF_Font *m_font = NULL;

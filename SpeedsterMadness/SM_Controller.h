@@ -21,6 +21,7 @@ public:
 	void SetHighScore(int score);
 	int GetScore();
 	void AssignTextScore(Text* text);
+	void AssignTextHighScore(Text * text);
 
 	//read and write from file
 	void ReadFromFile();
@@ -29,6 +30,7 @@ public:
 
 private:
 	Text* m_scoreText = nullptr;
+	Text* m_highscoreText = nullptr;
 	int m_score = 0;
 	int m_highScore;
 	int m_movX = 300;
